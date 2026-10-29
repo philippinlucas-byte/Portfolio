@@ -1,0 +1,4 @@
+Fonts downloaded from Google Fonts CSS endpoint.
+https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Gloock&display=swap
+Families: Gloock (Duarte Pinto); Geist (Vercel).
+Licenses: respective OFL files.

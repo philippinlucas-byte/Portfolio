@@ -1,0 +1,986 @@
+{
+  "greeting": "Bonjour, moi c’est Lucas Philippin !",
+  "invitation": "Venez découvrir mon travail !",
+  "projects": [
+    {
+      "slug": "termino-logic-croix-rouge-competence",
+      "title": "Termino-Logic - Croix-Rouge Compétence",
+      "year": "2026",
+      "source": "contenu/termino-logic-croix-rouge-competence/termino-logic-croix-rouge-competence.html",
+      "cover": {
+        "src": "/assets/termino-logic-croix-rouge-competence-cover-2560.webp",
+        "variants": [
+          {
+            "src": "/assets/termino-logic-croix-rouge-competence-cover-640.webp",
+            "width": 640
+          },
+          {
+            "src": "/assets/termino-logic-croix-rouge-competence-cover-1200.webp",
+            "width": 1200
+          },
+          {
+            "src": "/assets/termino-logic-croix-rouge-competence-cover-1920.webp",
+            "width": 1920
+          },
+          {
+            "src": "/assets/termino-logic-croix-rouge-competence-cover-2560.webp",
+            "width": 2560
+          }
+        ],
+        "width": 3832,
+        "height": 2160,
+        "alt": "Termino-Logic - Croix-Rouge Compétence",
+        "origin": "contenu/projets/projets_files/a7eda057-57af-4f28-bb1a-93cae775f334_rwc_0x0x3832x2_003_MynY.jpg"
+      },
+      "modules": [
+        {
+          "type": "text",
+          "html": "<div><div><strong> J'ai été contacté par la Croix-Rouge Compétence pour concevoir divers supports destinés à leurs apprenants. Le projet phare fut un jeu de société complet de 778 cartes, conçu pour faciliter l'apprentissage de la terminologie médicale. J'y ai travaillé en étroite collaboration avec Céline Bauwens, designer pédagogique de la structure, et son équipe pédagogique, en prenant en charge l'identité visuelle, la structuration du contenu et la mise en page du livret de règles. </strong><br></div></div>\n",
+          "text": "J'ai été contacté par la Croix-Rouge Compétence pour concevoir divers supports destinés à leurs apprenants. Le projet phare fut un jeu de société complet de 778 cartes, conçu pour faciliter l'apprentissage de la terminologie médicale. J'y ai travaillé en étroite collaboration avec Céline Bauwens, designer pédagogique de la structure, et son équipe pédagogique, en prenant en charge l'identité visuelle, la structuration du contenu et la mise en page du livret de règles."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-1-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-1-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-1-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-1-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-1-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 3072,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 1",
+              "origin": "contenu/termino-logic-croix-rouge-competence/termino-logic-croix-rouge-competence_files/8ffa9e0e-105f-4da7-8239-c89f163a78d6_rw_3840_-W9o.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h2>Le Jeu de cartes</h2><div>Ce projet a représenté un défi à plusieurs égards : créer une charte graphique personnalisée tout en restant une déclinaison de la charte globale de la Croix-Rouge, concevoir les règles de A à Z (plusieurs salves d'impressions et d'ajustements), et gérer un volume de contenu important — 778 cartes générées à partir d'un tri lexical conséquent et de scripts d'automatisation.</div><h3>1. Le Nom</h3><div>Trouver le titre du jeu a été un exercice à part entière : il devait rester ludique, mémorable, et évoquer clairement son objectif pédagogique. Plusieurs pistes ont été proposées avec Céline, puis soumises à l'équipe pédagogique qui a tranché sur \"Termino-Logic\".</div><h3>2. Le logo</h3><div><div>Pièce centrale du jeu, le logo a fait l'objet d'une réflexion approfondie. Il devait être modulable pour apparaître à la fois dans sa forme pleine et en icône réduite, rester proche de la charte Croix-Rouge tout en gardant un aspect ludique et attrayant.<br></div><div>Les couleurs dominantes de la Croix-Rouge — blanc sur fond rouge — ont été conservées pour inscrire le jeu dans la continuité de l'association. Le côté ludique passe donc par la forme  : un contour épais, un ombrage généreux, des courbes très arrondies pour sortir du cadre sérieux de l'apprentissage. Le logo représente deux cartes liées entre elles, en mouvement, pour évoquer le dynamisme recherché.<div></div></div></div></div>\n",
+          "text": "Le Jeu de cartesCe projet a représenté un défi à plusieurs égards : créer une charte graphique personnalisée tout en restant une déclinaison de la charte globale de la Croix-Rouge, concevoir les règles de A à Z (plusieurs salves d'impressions et d'ajustements), et gérer un volume de contenu important — 778 cartes générées à partir d'un tri lexical conséquent et de scripts d'automatisation.1. Le NomTrouver le titre du jeu a été un exercice à part entière : il devait rester ludique, mémorable, et évoquer clairement son objectif pédagogique. Plusieurs pistes ont été proposées avec Céline, puis soumises à l'équipe pédagogique qui a tranché sur \"Termino-Logic\".2. Le logoPièce centrale du jeu, le logo a fait l'objet d'une réflexion approfondie. Il devait être modulable pour apparaître à la fois dans sa forme pleine et en icône réduite, rester proche de la charte Croix-Rouge tout en gardant un aspect ludique et attrayant.Les couleurs dominantes de la Croix-Rouge — blanc sur fond rouge — ont été conservées pour inscrire le jeu dans la continuité de l'association. Le côté ludique passe donc par la forme : un contour épais, un ombrage généreux, des courbes très arrondies pour sortir du cadre sérieux de l'apprentissage. Le logo représente deux cartes liées entre elles, en mouvement, pour évoquer le dynamisme recherché."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-3-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-3-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-3-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-3-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-3-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/8ef6c69d-d8e5-4e27-ba0a-34ffff2863e7_rw_3840.jpg?h=53a03be4d54cc00faf7ed8239d5ff24a"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3>3. Les pictogrammes<br></h3><div><div>Une trame de pictogrammes semi-transparents, reprenant les spécialités médicales du jeu, vient égayer les fonds unis et renforcer l'ambiance \"jeu de société\". J'ai conçu une banque d'illustrations dans le même style, également utilisée dans d'autres supports pédagogiques du CRCNA.<br></div></div></div>\n",
+          "text": "3. Les pictogrammesUne trame de pictogrammes semi-transparents, reprenant les spécialités médicales du jeu, vient égayer les fonds unis et renforcer l'ambiance \"jeu de société\". J'ai conçu une banque d'illustrations dans le même style, également utilisée dans d'autres supports pédagogiques du CRCNA."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-5-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2880,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/c86df53b-4efb-42d7-9c05-26785c0a4525_rw_3840.jpg?h=ce3ea45d3420c043596fd3b69e9e9b98"
+            },
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-5-1-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-1-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-1-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-5-1-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1072,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 2",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/436947b2-c1c8-45da-9a13-c80ca4f5973d_rw_1920.jpg?h=67e89a596fb32ecb22da045e112b6d17"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3>4. Les cartes<br></h3><div><div>Au-delà de l'aspect graphique, les cartes sont l'outil de jeu : leur design devait servir le gameplay. C'est le support qui a le plus évolué au fil du projet, avec plusieurs salves d'impressions et de tests aux côtés de Céline — vérifier la lisibilité du texte, ajuster l'opacité de la trame graphique sur papier — avant de trouver leur forme définitive.</div><div>Les joueurs tenant leurs cartes à la verticale en main, ce format s'est imposé naturellement. Chaque carte affiche trois informations : le mot, en gros caractères centrés en partie haute pour rester visible même quand les cartes se superposent en main ; le type et les points, plus petits, dans les coins supérieurs — les emplacements les plus visibles pour le joueur ; les informations secondaires dans les coins inférieurs. La trame illustrée, à faible opacité, occupe l'espace vide sans capter l'attention.<br></div></div></div>\n",
+          "text": "4. Les cartesAu-delà de l'aspect graphique, les cartes sont l'outil de jeu : leur design devait servir le gameplay. C'est le support qui a le plus évolué au fil du projet, avec plusieurs salves d'impressions et de tests aux côtés de Céline — vérifier la lisibilité du texte, ajuster l'opacité de la trame graphique sur papier — avant de trouver leur forme définitive.Les joueurs tenant leurs cartes à la verticale en main, ce format s'est imposé naturellement. Chaque carte affiche trois informations : le mot, en gros caractères centrés en partie haute pour rester visible même quand les cartes se superposent en main ; le type et les points, plus petits, dans les coins supérieurs — les emplacements les plus visibles pour le joueur ; les informations secondaires dans les coins inférieurs. La trame illustrée, à faible opacité, occupe l'espace vide sans capter l'attention."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-7-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-7-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-7-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-7-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-7-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 3072,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/72853ada-2a02-4e85-9e3c-e5b0fc98f482_rw_3840.jpg?h=c7ac9c9db3c50c197472858b0ebc0145"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3>5. Le lexique</h3><div><div><div>Avant de dessiner les cartes, il fallait construire leur contenu. Le jeu repose sur les morphèmes du vocabulaire médical (préfixes, radicaux, suffixes). À partir de lexiques transmis par l'équipe pédagogique, j'ai découpé plusieurs centaines de mots pour en extraire les composantes puis calculé pour chacune son taux d'apparition et sa facilité d'association avec d'autres composantes.Ces données m'ont permis de répartir les cartes en deux catégories — communes et rares — et d'ajuster le nombre d'exemplaires ainsi que la valeur de chaque carte en fonction de son taux d'apparition réel. J'ai ensuite conçu des scripts Excel pour automatiser l'export des listes de mots et de points au format adapté à la fusion de données<br></div></div></div></div>\n",
+          "text": "5. Le lexiqueAvant de dessiner les cartes, il fallait construire leur contenu. Le jeu repose sur les morphèmes du vocabulaire médical (préfixes, radicaux, suffixes). À partir de lexiques transmis par l'équipe pédagogique, j'ai découpé plusieurs centaines de mots pour en extraire les composantes puis calculé pour chacune son taux d'apparition et sa facilité d'association avec d'autres composantes.Ces données m'ont permis de répartir les cartes en deux catégories — communes et rares — et d'ajuster le nombre d'exemplaires ainsi que la valeur de chaque carte en fonction de son taux d'apparition réel. J'ai ensuite conçu des scripts Excel pour automatiser l'export des listes de mots et de points au format adapté à la fusion de données"
+        },
+        {
+          "type": "video",
+          "src": "/assets/termino-logic-video.mp4",
+          "title": "Termino-Logic — présentation vidéo",
+          "source": "contenu/termino-logic-croix-rouge-competence/termino-logic-croix-rouge-competence_files/embed_data/4jPaS4gey_T_576_-W9o.mp4"
+        },
+        {
+          "type": "text",
+          "html": "<div><div><h3>6. Le livret<br></h3><div>Le livret de règles a demandé un travail éditorial à part entière : chapitrage clair, mise en page aérée, rédaction pensée pour rendre une information dense facilement digeste. Il s'est appuyé sur les automatisations InDesign — styles, styles GREP, options d'enchaînement, pagination et sommaire automatiques, ancrages — pour gérer un document long tout en gardant une cohérence graphique totale avec le reste du jeu.<br></div></div></div>\n",
+          "text": "6. Le livretLe livret de règles a demandé un travail éditorial à part entière : chapitrage clair, mise en page aérée, rédaction pensée pour rendre une information dense facilement digeste. Il s'est appuyé sur les automatisations InDesign — styles, styles GREP, options d'enchaînement, pagination et sommaire automatiques, ancrages — pour gérer un document long tout en gardant une cohérence graphique totale avec le reste du jeu."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-11-0-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-0-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1440,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/121ec32e-9b5c-4678-8ac1-caf751633390_rw_1920.jpg?h=b2891158b43c01561a87d278bbc19394"
+            },
+            {
+              "src": "/assets/termino-logic-croix-rouge-competence-11-1-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-1-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-1-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/termino-logic-croix-rouge-competence-11-1-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1440,
+              "alt": "Termino-Logic - Croix-Rouge Compétence — visuel 2",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/a038b080-2660-40b0-86e3-33cdfe417019_rw_1920.jpg?h=fb63c33b1cb14234b4142ee9ce802e30"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3>Autres supports<br></h3><div>En parallèle, j'ai réalisé les livrets de sécurité et plans d'évacuation de l'ensemble des sites de la Croix-Rouge Compétence Nouvelle-Aquitaine, ainsi que des pictogrammes, supports pédagogiques et logigrammes divers.<br></div><div><br></div><div> Ce projet a été réalisé pour la Croix-Rouge Compétence Nouvelle-Aquitaine, dans le cadre d'un stage puis d'une mission freelance, en collaboration avec l'équipe interne de la structure. Les visuels présentés ici sont montrés à titre de démonstration de mon travail de conception graphique ; leur exploitation reste exclusive à la Croix-Rouge Compétence Nouvelle-Aquitaine. Merci de ne pas les réutiliser sans autorisation. Le nom \"Termino-Logic\" est une marque déposée à l'INPI par la Croix-Rouge Compétence Nouvelle-Aquitaine. Toute reproduction ou utilisation du jeu, de son nom ou de ses éléments visuels sans autorisation expose à des poursuites de la part de son titulaire. <br></div></div>\n",
+          "text": "Autres supportsEn parallèle, j'ai réalisé les livrets de sécurité et plans d'évacuation de l'ensemble des sites de la Croix-Rouge Compétence Nouvelle-Aquitaine, ainsi que des pictogrammes, supports pédagogiques et logigrammes divers. Ce projet a été réalisé pour la Croix-Rouge Compétence Nouvelle-Aquitaine, dans le cadre d'un stage puis d'une mission freelance, en collaboration avec l'équipe interne de la structure. Les visuels présentés ici sont montrés à titre de démonstration de mon travail de conception graphique ; leur exploitation reste exclusive à la Croix-Rouge Compétence Nouvelle-Aquitaine. Merci de ne pas les réutiliser sans autorisation. Le nom \"Termino-Logic\" est une marque déposée à l'INPI par la Croix-Rouge Compétence Nouvelle-Aquitaine. Toute reproduction ou utilisation du jeu, de son nom ou de ses éléments visuels sans autorisation expose à des poursuites de la part de son titulaire."
+        }
+      ]
+    },
+    {
+      "slug": "identite-graphique-lucas-philippin",
+      "title": "Identité visuelle - Lucas Philippin",
+      "year": "2026",
+      "source": "contenu/identite-graphique-lucas-philippin/identite-graphique-lucas-philippin.html",
+      "cover": {
+        "src": "/assets/identite-graphique-lucas-philippin-cover-2560.webp",
+        "variants": [
+          {
+            "src": "/assets/identite-graphique-lucas-philippin-cover-640.webp",
+            "width": 640
+          },
+          {
+            "src": "/assets/identite-graphique-lucas-philippin-cover-1200.webp",
+            "width": 1200
+          },
+          {
+            "src": "/assets/identite-graphique-lucas-philippin-cover-1920.webp",
+            "width": 1920
+          },
+          {
+            "src": "/assets/identite-graphique-lucas-philippin-cover-2560.webp",
+            "width": 2560
+          }
+        ],
+        "width": 3832,
+        "height": 2160,
+        "alt": "Identité visuelle - Lucas Philippin",
+        "origin": "contenu/projets/projets_files/db8d1772-3aad-4c82-928f-730d3d5669ae_rwc_0x0x3832x2_003_MynY.jpg"
+      },
+      "modules": [
+        {
+          "type": "text",
+          "html": "<div><div>En tant que designer graphique et artiste 3D freelance, je souhaitais renforcer l'identité visuelle de mon activité en faisant imprimer des cartes de visite professionnelles.</div></div>\n",
+          "text": "En tant que designer graphique et artiste 3D freelance, je souhaitais renforcer l'identité visuelle de mon activité en faisant imprimer des cartes de visite professionnelles."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-1-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 1",
+              "origin": "contenu/identite-graphique-lucas-philippin/identite-graphique-lucas-philippin_files/759fc63e-4cc3-4348-8a47-a11e4d11e377_rw_3840_hHx5.jpg"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-1-1-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-1-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-1-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-1-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-1-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 2",
+              "origin": "contenu/identite-graphique-lucas-philippin/identite-graphique-lucas-philippin_files/c372f490-6619-476c-9c4b-b55558784f6b_rw_3840_hHx5.jpg"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-1-2-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-2-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-2-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-2-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-2-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 3",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/83e15dc2-ebd3-49ff-8355-b2b9edb54d54_rw_3840.jpg?h=b5144f690cb73c999fb147bd4e34da44"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-1-3-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-3-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-3-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-3-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-3-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 4",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/0cfa7c33-0b25-4958-bbf9-d1bc66a454fb_rw_3840.jpg?h=0e9702b8886e98af936267b8bd969d1f"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-1-4-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-4-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-4-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-4-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-1-4-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 5",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/2e3c6c6f-cf7a-4f33-8c0d-ec0d54c547d2_rw_3840.jpg?h=e5d41a62f70ee142477a9dfabeb2725d"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><div>Pour garantir une image cohérente et reconnaissable, j'ai pris le temps de concevoir une charte graphique complète reflétant mes valeurs, mon univers créatif et les attentes de mes clients.<br></div><div>Elle regroupe tous les éléments clés de mon identité visuelle — logo, typographie, palette de couleurs, principes de mise en page et déclinaisons graphiques — afin d'assurer une communication cohérente sur tous les supports.<br></div></div>\n",
+          "text": "Pour garantir une image cohérente et reconnaissable, j'ai pris le temps de concevoir une charte graphique complète reflétant mes valeurs, mon univers créatif et les attentes de mes clients.Elle regroupe tous les éléments clés de mon identité visuelle — logo, typographie, palette de couleurs, principes de mise en page et déclinaisons graphiques — afin d'assurer une communication cohérente sur tous les supports."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-3-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2880,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/c4d0eb9f-56b7-4c13-b7a0-780b5489305c_rw_3840.jpg?h=f67d58f780da7c38b575694c4dc51f98"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-3-1-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-1-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-1-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-1-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1297,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 2",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/d2fba2a9-95af-4caf-b0d3-108a6d6cdbfd_rw_1920.jpg?h=82fbdabba11ded3597a7ae59bfd6472a"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-3-2-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-2-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-2-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-2-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-2-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2880,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 3",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/54ed06f5-91bd-40a2-b02e-b2f7b5334530_rw_3840.jpg?h=3b82532c1823c0db407613eb6d2b35ad"
+            },
+            {
+              "src": "/assets/identite-graphique-lucas-philippin-3-3-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-3-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-3-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-3-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/identite-graphique-lucas-philippin-3-3-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2880,
+              "alt": "Identité visuelle - Lucas Philippin — visuel 4",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/bde11d36-0f22-4119-a458-a0da33d35eb8_rw_3840.jpg?h=41acd1788ada2fcb78c4ce8f7347733b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "5-modular-resume-templates",
+      "title": "Kit de CV Figma – 5 modèles modulaires",
+      "year": "2025",
+      "source": "contenu/5-modular-resume-templates/5-modular-resume-templates.html",
+      "cover": {
+        "src": "/assets/5-modular-resume-templates-cover-2560.webp",
+        "variants": [
+          {
+            "src": "/assets/5-modular-resume-templates-cover-640.webp",
+            "width": 640
+          },
+          {
+            "src": "/assets/5-modular-resume-templates-cover-1200.webp",
+            "width": 1200
+          },
+          {
+            "src": "/assets/5-modular-resume-templates-cover-1920.webp",
+            "width": 1920
+          },
+          {
+            "src": "/assets/5-modular-resume-templates-cover-2560.webp",
+            "width": 2560
+          }
+        ],
+        "width": 3832,
+        "height": 2160,
+        "alt": "Kit de CV Figma – 5 modèles modulaires",
+        "origin": "contenu/projets/projets_files/3c0839f6-32d7-4798-971d-ba8adb3f4263_rwc_0x0x3832x2_006_MynY.jpg"
+      },
+      "modules": [
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-0-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-0-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/5-modular-resume-templates-0-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/5-modular-resume-templates-0-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/5-modular-resume-templates-0-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Kit de CV Figma – 5 modèles modulaires — visuel 1",
+              "origin": "contenu/5-modular-resume-templates/5-modular-resume-templates_files/edd80fd7-1375-44b3-a5b1-97e84d48d687_rw_3840_Ef3-.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h2>Le projet</h2><div><div>Après avoir conçu un CV pour un client, j'ai voulu explorer la création de documents entièrement modulaires sur Figma, en exploitant l'auto-layout, les variables, les styles et les composants.</div><div>L'objectif : simplifier au maximum l'édition d'un CV, pour que même un débutant puisse le modifier facilement. Chaque élément fonctionne comme un bloc que l'on peut déplacer librement, le reste de la mise en page s'adaptant automatiquement. Les polices, couleurs, contenus et autres règles de mise en page sont gérés via des variables : toute modification s'applique instantanément à l'ensemble du document.</div><div>J'ai créé cinq modèles de CV en tout. Chacun comprend une page principale et une page complémentaire, pensée pour les profils avec de nombreuses expériences professionnelles souhaitant toutes les mettre en avant. Chaque modèle possède son propre style, ce qui permet de s'adapter à des profils très variés.</div></div></div>\n",
+          "text": "Le projetAprès avoir conçu un CV pour un client, j'ai voulu explorer la création de documents entièrement modulaires sur Figma, en exploitant l'auto-layout, les variables, les styles et les composants.L'objectif : simplifier au maximum l'édition d'un CV, pour que même un débutant puisse le modifier facilement. Chaque élément fonctionne comme un bloc que l'on peut déplacer librement, le reste de la mise en page s'adaptant automatiquement. Les polices, couleurs, contenus et autres règles de mise en page sont gérés via des variables : toute modification s'applique instantanément à l'ensemble du document.J'ai créé cinq modèles de CV en tout. Chacun comprend une page principale et une page complémentaire, pensée pour les profils avec de nombreuses expériences professionnelles souhaitant toutes les mettre en avant. Chaque modèle possède son propre style, ce qui permet de s'adapter à des profils très variés."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-2-0-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-2-0-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 1",
+              "origin": "contenu/5-modular-resume-templates/5-modular-resume-templates_files/37c56889-cfc6-4fba-ac64-bc4bfad8364d_rw_600_Ef3-.jpg"
+            },
+            {
+              "src": "/assets/5-modular-resume-templates-2-1-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-2-1-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 1 - Work history",
+              "origin": "contenu/5-modular-resume-templates/5-modular-resume-templates_files/b8090831-1c47-44c9-a9dd-06cca237633e_rw_600_Ef3-.jpg"
+            }
+          ]
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-3-0-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-3-0-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 2",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/3221f4c9-78e3-45a9-b898-dfaaf4f4fd13_rw_600.jpg?h=7992cbd9b789eb08c1848d643cd87c0c"
+            },
+            {
+              "src": "/assets/5-modular-resume-templates-3-1-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-3-1-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 2 - Work history",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/c3922502-aa3f-4d12-a71c-52b2ff0ed14b_rw_600.jpg?h=dd80494f6755bff35bfdcb72bc6412e3"
+            }
+          ]
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-4-0-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-4-0-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 3",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/d7213c19-9dc9-4bdb-a83a-5c037269d37e_rw_600.jpg?h=aa4992d5507d43e9cbc44449ccccb020"
+            },
+            {
+              "src": "/assets/5-modular-resume-templates-4-1-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-4-1-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 3 - Work history",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/c1e1b2bf-da62-417c-8e33-7a60d9aeff19_rw_600.jpg?h=438be9e6e4152d2c62e21462ce4114e4"
+            }
+          ]
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-5-0-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-5-0-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 4",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/e843cfaf-212f-4191-b737-38476610d2d7_rw_600.jpg?h=5cf0d0118ccc2b6cc0442444f15e043d"
+            },
+            {
+              "src": "/assets/5-modular-resume-templates-5-1-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-5-1-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 4 - Work history",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/dad154b5-91b3-4c46-9d25-1f409ba34314_rw_600.jpg?h=41c825a8f9785683891127fd4eface33"
+            }
+          ]
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/5-modular-resume-templates-6-0-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-6-0-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 5",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/bf1eb582-ff1e-419c-8051-e14ae060a1ab_rw_600.jpg?h=4e28c29d83efbf60a09ee7389220570d"
+            },
+            {
+              "src": "/assets/5-modular-resume-templates-6-1-595.webp",
+              "variants": [
+                {
+                  "src": "/assets/5-modular-resume-templates-6-1-595.webp",
+                  "width": 595
+                }
+              ],
+              "width": 595,
+              "height": 820,
+              "alt": "Resume 5 - Work history",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/a327e9ff-a7d7-4060-89dd-f0db1a101c20_rw_600.jpg?h=f154b9631f87df249244c7aae662b75f"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3><h3>Ce pack de 5 CV est disponible sur ma boutique Gumroad <a href=\"https://lucasphilippin.gumroad.com/\">ICI</a><br></h3></h3></div>\n",
+          "text": "Ce pack de 5 CV est disponible sur ma boutique Gumroad ICI"
+        }
+      ]
+    },
+    {
+      "slug": "webdesign-raise",
+      "title": "Webdesign - Raise",
+      "year": "2025",
+      "source": "contenu/webdesign-raise/webdesign-raise.html",
+      "cover": {
+        "src": "/assets/webdesign-raise-cover-2560.webp",
+        "variants": [
+          {
+            "src": "/assets/webdesign-raise-cover-640.webp",
+            "width": 640
+          },
+          {
+            "src": "/assets/webdesign-raise-cover-1200.webp",
+            "width": 1200
+          },
+          {
+            "src": "/assets/webdesign-raise-cover-1920.webp",
+            "width": 1920
+          },
+          {
+            "src": "/assets/webdesign-raise-cover-2560.webp",
+            "width": 2560
+          }
+        ],
+        "width": 3832,
+        "height": 2160,
+        "alt": "Webdesign - Raise",
+        "origin": "contenu/projets/projets_files/df5e2ca6-a72d-45b6-ada3-2cae7b060645_rwc_0x0x3832x2_003_MynY.jpg"
+      },
+      "modules": [
+        {
+          "type": "text",
+          "html": "<div><h2>Le projet</h2><div><div>Raise est un projet de web design conçu autour du concept de prop firm. L'objectif était d'apporter une approche fraîche, moderne et visuellement attrayante au monde du prop trading, souvent perçu comme rigide et peu accueillant.</div><div>La cible est principalement de jeunes investisseurs souhaitant se lancer dans le trading sans disposer d'un capital de départ important, mais restant méfiants envers des sociétés souvent opaques, avec des conditions générales restrictives ou peu claires.</div><div>Le site a été conçu pour donner à Raise une image professionnelle et transparente, sans fioritures inutiles. Le contenu a été volontairement épuré pour ne pas noyer le visiteur sous l'information — seul l'essentiel est présenté. L'expérience utilisateur doit donner le sentiment d'entrer enfin dans une prop firm à la fois honnête et efficace.</div></div></div>\n",
+          "text": "Le projetRaise est un projet de web design conçu autour du concept de prop firm. L'objectif était d'apporter une approche fraîche, moderne et visuellement attrayante au monde du prop trading, souvent perçu comme rigide et peu accueillant.La cible est principalement de jeunes investisseurs souhaitant se lancer dans le trading sans disposer d'un capital de départ important, mais restant méfiants envers des sociétés souvent opaques, avec des conditions générales restrictives ou peu claires.Le site a été conçu pour donner à Raise une image professionnelle et transparente, sans fioritures inutiles. Le contenu a été volontairement épuré pour ne pas noyer le visiteur sous l'information — seul l'essentiel est présenté. L'expérience utilisateur doit donner le sentiment d'entrer enfin dans une prop firm à la fois honnête et efficace."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/webdesign-raise-1-0-2560.webp",
+              "variants": [
+                {
+                  "src": "/assets/webdesign-raise-1-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/webdesign-raise-1-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/webdesign-raise-1-0-1920.webp",
+                  "width": 1920
+                },
+                {
+                  "src": "/assets/webdesign-raise-1-0-2560.webp",
+                  "width": 2560
+                }
+              ],
+              "width": 3840,
+              "height": 2160,
+              "alt": "Webdesign - Raise — visuel 1",
+              "origin": "contenu/webdesign-raise/webdesign-raise_files/c5c71861-ab79-4421-8668-ba908f212a47_rw_3840_kLfK.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h2>Approche marketing<br></h2><h3><span><span>1-</span></span><span><span> </span></span> Fiabilité et maîtrise</h3><div>Rassurer les clients en mettant en avant une certification reconnue, symbole de confiance et de crédibilité.</div><h3><span>2-</span><span> </span> Excellence technique</h3><div>Mettre en valeur l'efficacité technique de Raise, pour souligner qu'il ne s'agit pas seulement d'une entreprise conforme et réglementée, mais aussi d'une plateforme qui aide réellement les traders à faire croître leur capital.</div><h3><span>3-</span> Liberté de trading</h3><div>Souligner la liberté totale laissée aux traders : aucune stratégie imposée, aucune contrainte limitante — une particularité rare chez la plupart des prop firms.</div></div>\n",
+          "text": "Approche marketing1- Fiabilité et maîtriseRassurer les clients en mettant en avant une certification reconnue, symbole de confiance et de crédibilité.2- Excellence techniqueMettre en valeur l'efficacité technique de Raise, pour souligner qu'il ne s'agit pas seulement d'une entreprise conforme et réglementée, mais aussi d'une plateforme qui aide réellement les traders à faire croître leur capital.3- Liberté de tradingSouligner la liberté totale laissée aux traders : aucune stratégie imposée, aucune contrainte limitante — une particularité rare chez la plupart des prop firms."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/webdesign-raise-3-0-1440.webp",
+              "variants": [
+                {
+                  "src": "/assets/webdesign-raise-3-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/webdesign-raise-3-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/webdesign-raise-3-0-1440.webp",
+                  "width": 1440
+                }
+              ],
+              "width": 1440,
+              "height": 9056,
+              "alt": "Webdesign - Raise — visuel 1",
+              "origin": "https://cdn.myportfolio.com/58ac964c-4c0b-46b6-bf4c-95d17ddf4430/dabe552b-61ed-4983-ac1e-4e0632c18dba_rw_1920.jpg?h=33d70ce37f6cf0dce1c0defce370eadc"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><h3>Vous pouvez accéder à la maquette du site via ce lien Figma : <a href=\"https://www.figma.com/proto/ypDqfg0wMetO75jrzs6K9f/Raise-Website?node-id=1902-1523&amp;t=OposbUC8Gp8oTTiR-1\">LIEN</a>.<br></h3></div>\n",
+          "text": "Vous pouvez accéder à la maquette du site via ce lien Figma : LIEN."
+        }
+      ]
+    },
+    {
+      "slug": "logo-and-business-card-resiop",
+      "title": "Logo et carte de visite - Résiop",
+      "year": "2023",
+      "source": "contenu/logo-and-business-card-resiop/logo-and-business-card-resiop.html",
+      "cover": {
+        "src": "/assets/logo-and-business-card-resiop-cover-1556.webp",
+        "variants": [
+          {
+            "src": "/assets/logo-and-business-card-resiop-cover-640.webp",
+            "width": 640
+          },
+          {
+            "src": "/assets/logo-and-business-card-resiop-cover-1200.webp",
+            "width": 1200
+          },
+          {
+            "src": "/assets/logo-and-business-card-resiop-cover-1556.webp",
+            "width": 1556
+          }
+        ],
+        "width": 1556,
+        "height": 877,
+        "alt": "Logo et carte de visite - Résiop",
+        "origin": "contenu/projets/projets_files/384f8878-06c0-4be1-9d09-91ec42473874_rwc_183x99x155_005_MynY.jpg"
+      },
+      "modules": [
+        {
+          "type": "text",
+          "html": "<div><div>J'ai conçu un logo et une carte de visite pour un consultant industriel, avec pour objectif de trouver le juste équilibre entre professionnalisme et dynamisme. L'identité visuelle repose sur des formes affirmées et modernes, associées à une palette de couleurs vive — bleu électrique et orange — qui reflètent à la fois l'expertise du consultant et sa personnalité accessible et enthousiaste.</div></div>\n",
+          "text": "J'ai conçu un logo et une carte de visite pour un consultant industriel, avec pour objectif de trouver le juste équilibre entre professionnalisme et dynamisme. L'identité visuelle repose sur des formes affirmées et modernes, associées à une palette de couleurs vive — bleu électrique et orange — qui reflètent à la fois l'expertise du consultant et sa personnalité accessible et enthousiaste."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/logo-and-business-card-resiop-1-0-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/logo-and-business-card-resiop-1-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-1-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-1-0-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1080,
+              "alt": "Logo et carte de visite - Résiop — visuel 1",
+              "origin": "contenu/logo-and-business-card-resiop/logo-and-business-card-resiop_files/730ab94b-6efa-494c-89bc-29b5383d6a7d_rw_1920_cCam.jpg"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "html": "<div><div> Le défi consistait à créer une image fraîche et contemporaine sans s'éloigner des professionnels du secteur plus traditionnels. Le design devait paraître actuel sans être « tendance », en restant crédible tout en demeurant accessible à un large public — notamment aux profils expérimentés, peu familiers avec les codes du design actuel.<br></div></div>\n",
+          "text": "Le défi consistait à créer une image fraîche et contemporaine sans s'éloigner des professionnels du secteur plus traditionnels. Le design devait paraître actuel sans être « tendance », en restant crédible tout en demeurant accessible à un large public — notamment aux profils expérimentés, peu familiers avec les codes du design actuel."
+        },
+        {
+          "type": "images",
+          "items": [
+            {
+              "src": "/assets/logo-and-business-card-resiop-3-0-1601.webp",
+              "variants": [
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-0-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-0-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-0-1601.webp",
+                  "width": 1601
+                }
+              ],
+              "width": 1601,
+              "height": 962,
+              "alt": "Proportions du logo",
+              "origin": "contenu/logo-and-business-card-resiop/logo-and-business-card-resiop_files/dff53595-024c-4e55-bc58-59457f20a76c_rw_1920_cCam.jpg"
+            },
+            {
+              "src": "/assets/logo-and-business-card-resiop-3-1-1920.webp",
+              "variants": [
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-1-640.webp",
+                  "width": 640
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-1-1200.webp",
+                  "width": 1200
+                },
+                {
+                  "src": "/assets/logo-and-business-card-resiop-3-1-1920.webp",
+                  "width": 1920
+                }
+              ],
+              "width": 1920,
+              "height": 1427,
+              "alt": "Carte de visite",
+              "origin": "contenu/logo-and-business-card-resiop/logo-and-business-card-resiop_files/e682f2fa-e022-4d27-9f54-629f2766b585_rw_1920_cCam.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
