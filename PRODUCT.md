@@ -56,6 +56,7 @@ Les sources locales sont des exports du portfolio Adobe Portfolio, accompagnés 
 - Prendre pour référence la charte fournie dans `charte` et préserver ses éléments d’identité.
 - Polices imposées : **Gloock** pour les titres, **Geist** pour le corps de texte. L’utilisateur a confirmé le 29 octobre 2026 que « Glook » dans le brief désignait bien Gloock. Héberger les fichiers de police avec le site.
 - L’utilisateur autorise l’ajout de sous-titres en **Geist, capitales grasses** pour renforcer la hiérarchie. Les intitulés ajoutés doivent décrire les disciplines réellement représentées dans les projets.
+- Correction explicite du 29 octobre : priorité à la modernité et à la propreté. L’utilisateur rejette les cadres blancs à deux coins arrondis, leur rendu vieillot et les lignes de vagues ajoutées. Les références doivent nourrir le travail sans être copiées littéralement. Utiliser les motifs végétaux de sa planche d’iconographie comme texture discrète uniquement. Les flèches droites et froides restent rejetées. La référence web est graphique uniquement : ses promesses commerciales ne font pas partie du contenu du portfolio.
 - Préserver les formulations existantes ; ne pas ajouter de nouveaux arguments commerciaux sans validation.
 
 ## Evidence on Hand

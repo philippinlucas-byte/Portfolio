@@ -13,4 +13,12 @@
 - `prefers-reduced-motion` : règles CSS et garde-fous JavaScript contrôlés ; préférence système non basculée dans le navigateur de contrôle.
 - Transitions entre pages : amélioration native progressive ; la navigation ordinaire reste disponible sur les navigateurs sans cette fonction.
 
-Les captures nommées dans le dossier ont été ouvertes et vérifiées. Le site est prêt pour une publication Cloudflare Pages ; aucun domaine de production ni déploiement n’a été confirmé pendant cette tâche.
+## Reprise après correction de la direction
+
+- Dernier commit observé : `4ef32ec` — `2nd push`. Modifications de travail conservées ; aucun commit ni envoi distant effectué.
+- Suppression des panneaux blancs, des coins diagonaux et des vagues. Images sans cadre, hiérarchie Gloock/Geist, fougère originale en texture légère.
+- Nouvelle compilation et contrôles réussis : neuf pages, 233 références locales et 16 modules narratifs conservés.
+- Captures actuelles vérifiées : accueil ordinateur et largeur habituelle de 1864 px ; accueil mobile en deux vues (`mobile.png` et `mobile-footer.png`) ; projet, contact et visionneuse sur ordinateur et mobile. La capture longue du navigateur était limitée à 2250 px : les deux vues mobiles évitent de masquer le pied de page.
+- Les anciennes captures `narrow-*` et `mobile-top.png` ne constituent pas les preuves de cette dernière version.
+
+Aucun domaine de production ni déploiement n’a été confirmé pendant cette tâche. Voir `audit.md` pour les limites restantes, notamment le contraste du formulaire Tally externe.
