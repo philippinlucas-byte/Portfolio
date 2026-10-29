@@ -24,8 +24,9 @@ if (dialog && typeof dialog.showModal === 'function') {
   const previous = dialog.querySelector('.lightbox-prev');
   const next = dialog.querySelector('.lightbox-next');
   const close = dialog.querySelector('.lightbox-close');
-  let index=0, opener=null, touchX=null;
+  let index=0, opener=null, touchX=null, direction=1, closing=false;
   function show(position) {
+    direction=position<index?-1:1;
     index = (position + links.length) % links.length;
     const link=links[index];
     image.dataset.loading='';
@@ -37,7 +38,15 @@ if (dialog && typeof dialog.showModal === 'function') {
     image.src=link.href;
     previous.disabled=next.disabled=links.length<2;
   }
-  image.addEventListener('load',()=> { delete image.dataset.loading; status.textContent=''; });
+  image.addEventListener('load',()=> {
+    delete image.dataset.loading;
+    status.textContent='';
+    image.getAnimations().forEach(animation=>animation.cancel());
+    if(!motion.matches) image.animate([
+      {opacity:.35,transform:`translateX(${direction*18}px) scale(.99)`},
+      {opacity:1,transform:'translateX(0) scale(1)'}
+    ],{duration:320,easing:'cubic-bezier(.16,1,.3,1)'});
+  });
   image.addEventListener('error',()=> {
     delete image.dataset.loading;
     status.textContent='L’image n’a pas pu être chargée.';
@@ -52,7 +61,16 @@ if (dialog && typeof dialog.showModal === 'function') {
     dialog.showModal();
     close.focus();
   }));
-  close.addEventListener('click',()=>dialog.close());
+  function dismiss() {
+    if(closing) return;
+    if(motion.matches) {dialog.close();return;}
+    closing=true;
+    dialog.animate([{opacity:1},{opacity:0}],{duration:160,easing:'ease-out'}).finished.then(()=>{
+      dialog.close();closing=false;
+    });
+  }
+  close.addEventListener('click',dismiss);
+  dialog.addEventListener('cancel',event=>{event.preventDefault();dismiss();});
   previous.addEventListener('click',()=>show(index-1));
   next.addEventListener('click',()=>show(index+1));
   dialog.addEventListener('close',()=>opener?.focus({preventScroll:true}));

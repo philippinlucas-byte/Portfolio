@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Choix délégué à l’agent, conformément à `PROMPT.md`, confirmé par l’utilisateur le 29 octobre 2026. La solution doit être fiable, propre, modulaire et adaptée à un portfolio déployé sur **Cloudflare Pages** (version gratuite), cible confirmée. Le framework et la procédure de compilation restent à déterminer lors de l’implémentation ; aucune application cible n’est encore initialisée.
+Choix délégué à l’agent, conformément à `PROMPT.md`, confirmé par l’utilisateur le 29 octobre 2026. Réalisation retenue : site statique multipage, gabarits JavaScript exécutés par Node.js 22 ou ultérieur, HTML/CSS et JavaScript léger dans le navigateur, sans dépendance de production. `npm run build` génère `dist/`. Déploiement cible : **Cloudflare Pages**, version gratuite. Les médias préparés et les polices WOFF2 sont locaux et versionnés.
 
 ## Users
 
@@ -44,7 +44,7 @@ Les sources locales sont des exports du portfolio Adobe Portfolio, accompagnés 
 - Conserver exactement la structure, les textes et les images fournis dans `contenu`, conformément au brief confirmé dans `PROMPT.md`.
 - Préserver les cinq réalisations : Termino-Logic — Croix-Rouge Compétence ; Identité visuelle — Lucas Philippin ; Kit de CV Figma — 5 modèles modulaires ; Webdesign — Raise ; Logo et carte de visite — Résiop. Les intitulés publiés doivent reprendre les sources.
 - Préserver la page contact, avec ses champs nom, adresse e-mail et message, ainsi que les liens de contact et réseaux présents dans les sources.
-- Le mécanisme d’envoi du formulaire passera par Tally, le formulaire ciblé se nomme "Untitled" dans le compte de l'utilisateur dont j'ai l'accès via un plugin.
+- Le formulaire Tally confirmé par l’utilisateur est `https://tally.so/r/81gBgk`, intégré dans la page contact. Il comporte actuellement Nom, Entreprise, Email et Message obligatoires, un CAPTCHA et une redirection après envoi vers `https://philippin.fr/`. Le domaine de déploiement du portfolio reste à confirmer.
 - Produire un code propre, modulaire et prêt à être compilé si la stack retenue le nécessite.
 - Prévoir les animations au défilement demandées dans le brief, subtiles, fluides et performantes.
 - Le nom de domaine et la configuration de déploiement restent à déterminer. Cloudflare Pages est la cible, sans déploiement existant confirmé.
@@ -55,6 +55,7 @@ Les sources locales sont des exports du portfolio Adobe Portfolio, accompagnés 
 - Portfolio professionnel haut de gamme, moderne, soigné et épuré, selon `PROMPT.md` confirmé par l’utilisateur.
 - Prendre pour référence la charte fournie dans `charte` et préserver ses éléments d’identité.
 - Polices imposées : **Gloock** pour les titres, **Geist** pour le corps de texte. L’utilisateur a confirmé le 29 octobre 2026 que « Glook » dans le brief désignait bien Gloock. Héberger les fichiers de police avec le site.
+- L’utilisateur autorise l’ajout de sous-titres en **Geist, capitales grasses** pour renforcer la hiérarchie. Les intitulés ajoutés doivent décrire les disciplines réellement représentées dans les projets.
 - Préserver les formulations existantes ; ne pas ajouter de nouveaux arguments commerciaux sans validation.
 
 ## Evidence on Hand

@@ -16,6 +16,13 @@ const chevron = '<svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path 
 const closeIcon = '<svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="m6 6 12 12M6 18 18 6"/></svg>';
 const plus = '<svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M12 5v14M5 12h14"/></svg>';
 const projectHref = p => `/${p.slug}/`;
+const disciplines = {
+  'termino-logic-croix-rouge-competence': 'Édition · Jeu pédagogique',
+  'identite-graphique-lucas-philippin': 'Identité visuelle',
+  '5-modular-resume-templates': 'Mise en page · Figma',
+  'webdesign-raise': 'Webdesign',
+  'logo-and-business-card-resiop': 'Identité · Supports imprimés'
+};
 const social = '<a href="https://www.linkedin.com/in/lucas-philippin" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/philiperlimpinpin/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.artstation.com/lucas-philippin" target="_blank" rel="noopener noreferrer">ArtStation</a><a href="mailto:philippin.lucas@gmail.com">E-mail</a>';
 
 function img(image, { sizes='100vw', eager=false, transition='' }={}) {
@@ -24,7 +31,7 @@ function img(image, { sizes='100vw', eager=false, transition='' }={}) {
 }
 
 function card(p, className='', eager=false, sizes='(max-width: 720px) calc(100vw - 40px), 45vw') {
-  return `<a class="project-card ${className}" href="${projectHref(p)}"><div class="art">${img(p.cover,{eager,sizes,transition:`project-${p.slug}`})}<span class="project-open" aria-hidden="true">${arrow}</span></div><div class="project-caption"><h2>${esc(p.title)}</h2><time datetime="${p.year}">${p.year}</time></div></a>`;
+  return `<a class="project-card ${className}" href="${projectHref(p)}"><div class="art">${img(p.cover,{eager,sizes,transition:`project-${p.slug}`})}<span class="project-open" aria-hidden="true">${arrow}</span></div><div class="project-caption"><div><h2>${esc(p.title)}</h2><p class="project-discipline">${disciplines[p.slug]}</p></div><time datetime="${p.year}">${p.year}</time></div></a>`;
 }
 
 function page({ title, description, body, route='/', kind='project', image=data.projects[0].cover.src, lightbox=false }) {
@@ -44,7 +51,7 @@ async function emit(route, content) {
   await writeFile(dest,content);
 }
 
-const homeBody=`<section class="intro wrap"><h1>Bonjour, moi c’est <span>Lucas Philippin !</span></h1><p>${esc(data.invitation)}</p></section><section class="gallery wrap" aria-label="Mes projets"><div class="gallery-opening">${card(data.projects[0],'lead',true,'(max-width: 720px) calc(100vw - 40px), 62vw')}<div class="gallery-stack">${card(data.projects[1],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}${card(data.projects[2],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}</div></div><div class="gallery-rest reveal-group">${data.projects.slice(3).map(p=>card(p)).join('')}</div></section>`;
+const homeBody=`<section class="intro wrap"><div><h1><span class="title-line"><span>Bonjour, moi c’est</span></span> <span class="title-line"><span>Lucas Philippin !</span></span></h1><p class="intro-subtitle">Design graphique &amp; édition</p></div><a class="intro-invitation" href="#projets">${esc(data.invitation)}<svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><path d="M12 4v16m-7-7 7 7 7-7"/></svg></a></section><section class="gallery wrap" id="projets" aria-label="Mes projets"><div class="gallery-opening">${card(data.projects[0],'lead',true,'(max-width: 720px) calc(100vw - 40px), 62vw')}<div class="gallery-stack">${card(data.projects[1],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}${card(data.projects[2],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}</div></div><div class="gallery-rest reveal-group">${data.projects.slice(3).map(p=>card(p)).join('')}</div></section><section class="contact-band"><div class="wrap"><a href="/contact/">Contact ${arrow}</a><p class="contact-band-subtitle">Lucas Philippin · Designer Graphique</p></div></section>`;
 const home = page({title:'Mes projets',description:'Le portfolio de Lucas Philippin, Designer Graphique. Découvrez mes projets.',body:homeBody,kind:'home'});
 await emit('',home);
 await emit('projets',page({title:'Mes projets',description:'Le portfolio de Lucas Philippin, Designer Graphique. Découvrez mes projets.',body:homeBody,kind:'home',route:'/projets/'}));
@@ -63,7 +70,7 @@ for (const p of data.projects) {
     return result;
   }).join('\n');
   const others=data.projects.filter(other=>other.slug!==p.slug);
-  const body=`<article class="project-page wrap"><header class="project-heading"><a href="/projets/" class="back-link">${chevron} Mes projets</a><h1>${esc(p.title)}</h1><time datetime="${p.year}">${p.year}</time></header><div class="project-modules">${modules}</div></article><section class="related wrap"><h2>Vous pourriez aimer aussi :</h2><div class="related-grid reveal-group">${others.map(other=>card(other,'','',( '(max-width: 720px) calc(100vw - 40px), 44vw'))).join('')}</div></section>`;
+  const body=`<article class="project-page wrap"><header class="project-heading"><a href="/projets/" class="back-link">${chevron} Mes projets</a><h1>${esc(p.title)}</h1><div class="project-meta"><p class="project-discipline">${disciplines[p.slug]}</p><time datetime="${p.year}">${p.year}</time></div></header><div class="project-modules">${modules}</div></article><section class="related wrap"><h2>Vous pourriez aimer aussi :</h2><div class="related-grid reveal-group">${others.map(other=>card(other,'','',( '(max-width: 720px) calc(100vw - 40px), 44vw'))).join('')}</div></section>`;
   const description=p.modules.find(m=>m.type==='text')?.text.slice(0,220)||p.title;
   await emit(p.slug,page({title:p.title,description,body,route:projectHref(p),image:p.cover.src,lightbox:true}));
 }
