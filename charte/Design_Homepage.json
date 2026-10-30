@@ -1,0 +1,1179 @@
+{
+  "components": {
+    "ProjetsPremiReRangE": {
+      "node": {
+        "name": "Projets — première rangée",
+        "type": "FRAME",
+        "layout": {
+          "mode": "row",
+          "gap": 16,
+          "sizing": {
+            "horizontal": "FILL",
+            "vertical": "FILL"
+          }
+        },
+        "children": [
+          {
+            "use": "Portfolio / Carte projet",
+            "props": "{{portfolio_carte_projet_props}}",
+            "size": {
+              "width": 422,
+              "height": 236
+            }
+          },
+          {
+            "use": "Portfolio / Carte projet",
+            "props": "{{portfolio_carte_projet_props_2}}",
+            "size": {
+              "width": 422,
+              "height": 236
+            }
+          }
+        ]
+      },
+      "props": [
+        "portfolio_carte_projet_props",
+        "portfolio_carte_projet_props_2"
+      ]
+    },
+    "Portfolio / Bouton contact": {
+      "node": {
+        "name": "Portfolio / Bouton contact",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "padding": {
+            "right": 30,
+            "left": 32
+          },
+          "primaryAxisAlign": "SPACE_BETWEEN",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 2",
+        "cornerRadius": 27,
+        "children": [
+          {
+            "name": "Discutons",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#012C50",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 16,
+              "lineHeight": 19
+            }
+          },
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Portfolio / Bouton principal": {
+      "node": {
+        "name": "Portfolio / Bouton principal",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "padding": {
+            "right": 30,
+            "left": 32
+          },
+          "primaryAxisAlign": "SPACE_BETWEEN",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Bleu Profond/Bleu profond",
+        "cornerRadius": 27,
+        "children": [
+          {
+            "name": "Voir les projets",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#FFFFFF",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 16,
+              "lineHeight": 19
+            }
+          },
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Portfolio / Ouvrir un projet": {
+      "node": {
+        "name": "Portfolio / Ouvrir un projet",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "primaryAxisAlign": "CENTER",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 6",
+        "cornerRadius": 20,
+        "children": [
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      }
+    },
+    "Portfolio / Filtre actif": {
+      "node": {
+        "name": "Portfolio / Filtre actif",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "primaryAxisAlign": "CENTER",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 2",
+        "cornerRadius": 18,
+        "children": [
+          {
+            "name": "Tous",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#012C50",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 14,
+              "lineHeight": 17
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Portfolio / Filtre": {
+      "node": {
+        "name": "Portfolio / Filtre",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "primaryAxisAlign": "CENTER",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 6",
+        "stroke": "Turquoise Océanique/TO 4",
+        "strokeWeight": 1,
+        "cornerRadius": 18,
+        "children": [
+          {
+            "name": "Tous",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#012C50",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 14,
+              "lineHeight": 17
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Portfolio / Carte projet": {
+      "node": {
+        "name": "Portfolio / Carte projet",
+        "type": "COMPONENT",
+        "fill": "Gris/Blanc",
+        "cornerRadius": 20,
+        "children": [
+          {
+            "name": "Couverture",
+            "type": "RECTANGLE",
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "fill": "Turquoise Océanique/TO 4",
+            "size": {
+              "width": 424,
+              "height": 239
+            }
+          },
+          {
+            "name": "Gradient",
+            "type": "RECTANGLE",
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "fills": [
+              {
+                "gradient": "GRADIENT_LINEAR",
+                "stops": [
+                  {
+                    "position": 0,
+                    "color": "#D9D9D900"
+                  },
+                  {
+                    "position": 1,
+                    "color": "#33444B59"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "type": "BACKGROUND_BLUR",
+                "radius": 0
+              }
+            ],
+            "size": {
+              "width": 424,
+              "height": 239
+            }
+          },
+          {
+            "name": "Légende",
+            "type": "FRAME",
+            "layout": {
+              "mode": "row",
+              "padding": {
+                "right": 14,
+                "left": 20
+              },
+              "primaryAxisAlign": "SPACE_BETWEEN",
+              "counterAxisAlign": "CENTER",
+              "sizing": {
+                "horizontal": "FIXED",
+                "vertical": "FIXED"
+              }
+            },
+            "constraints": {
+              "horizontal": "STRETCH",
+              "vertical": "MAX"
+            },
+            "children": [
+              {
+                "name": "Texte",
+                "type": "FRAME",
+                "layout": {
+                  "mode": "column",
+                  "gap": 1,
+                  "sizing": {
+                    "horizontal": "FIXED",
+                    "vertical": "HUG"
+                  }
+                },
+                "effects": [
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": "#0000000D",
+                    "offset": {
+                      "x": 0,
+                      "y": 4
+                    },
+                    "radius": 6,
+                    "spread": -2
+                  },
+                  {
+                    "type": "DROP_SHADOW",
+                    "color": "#0000001A",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "radius": 15,
+                    "spread": -3
+                  }
+                ],
+                "children": [
+                  {
+                    "name": "Identité visuelle",
+                    "type": "TEXT",
+                    "characters": "{{discipline}}",
+                    "color": "#FFFFFF",
+                    "font": {
+                      "family": "Geist",
+                      "size": 12,
+                      "lineHeight": 14
+                    }
+                  },
+                  {
+                    "name": "Nom du projet",
+                    "type": "TEXT",
+                    "characters": "{{titre}}",
+                    "color": "#FFFFFF",
+                    "font": {
+                      "family": "Gloock",
+                      "size": 20,
+                      "lineHeight": 24
+                    }
+                  }
+                ]
+              },
+              {
+                "use": "Portfolio / Ouvrir un projet",
+                "size": {
+                  "width": 40,
+                  "height": 40
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "props": [
+        "discipline",
+        "titre"
+      ]
+    },
+    "app-icon": {
+      "node": {
+        "name": "app-icon",
+        "type": "COMPONENT",
+        "cornerRadius": 22,
+        "children": [
+          {
+            "name": "Rectangle 139",
+            "type": "VECTOR",
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "fill": "Gris/Blanc",
+            "size": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "name": "Rectangle 138",
+            "type": "VECTOR",
+            "constraints": {
+              "horizontal": "SCALE",
+              "vertical": "SCALE"
+            },
+            "fill": "Turquoise Océanique/TO 4",
+            "opacity": 0.5,
+            "size": {
+              "width": 100,
+              "height": 100
+            }
+          },
+          {
+            "name": "logomark",
+            "type": "INSTANCE",
+            "component": "logomark",
+            "size": {
+              "width": 40,
+              "height": 50
+            }
+          }
+        ]
+      }
+    },
+    "Portfolio / Bouton contour": {
+      "node": {
+        "name": "Portfolio / Bouton contour",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "padding": {
+            "right": 30,
+            "left": 32
+          },
+          "primaryAxisAlign": "SPACE_BETWEEN",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 6",
+        "stroke": "Turquoise Océanique/TO 2",
+        "strokeWeight": 1,
+        "cornerRadius": 27,
+        "children": [
+          {
+            "name": "Discutons",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#01497C",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 16,
+              "lineHeight": 19
+            }
+          },
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    }
+  },
+  "nodes": [
+    {
+      "name": "Portfolio — Desktop 1920 × 1080",
+      "type": "FRAME",
+      "fill": "Turquoise Océanique/TO 6",
+      "children": [
+        {
+          "name": "Fond — botanique discrète",
+          "type": "FRAME",
+          "children": [
+            {
+              "name": "Plante — bord hauche, 8 %",
+              "type": "FRAME",
+              "opacity": 0.07999999821186066,
+              "children": [
+                {
+                  "name": "Calque 1",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "children": [
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 0,
+                            "height": 0
+                          }
+                        },
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "CENTER",
+                            "vertical": "CENTER"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 249,
+                            "height": 483
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Fougère — arrière-plan, 5 %",
+              "type": "FRAME",
+              "children": [
+                {
+                  "name": "Calque 1",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Vector",
+                      "type": "VECTOR",
+                      "constraints": {
+                        "horizontal": "SCALE",
+                        "vertical": "SCALE"
+                      },
+                      "fill": "Turquoise Océanique/TO 5",
+                      "size": {
+                        "width": 393,
+                        "height": 248
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Plante — bord droit, 6 %",
+              "type": "FRAME",
+              "opacity": 0.05999999865889549,
+              "children": [
+                {
+                  "name": "Calque 1",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "children": [
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 0,
+                            "height": 0
+                          }
+                        },
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 428,
+                            "height": 330
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Page — structure verticale",
+          "type": "FRAME",
+          "layout": {
+            "mode": "column",
+            "primaryAxisAlign": "SPACE_BETWEEN",
+            "sizing": {
+              "horizontal": "FIXED",
+              "vertical": "FIXED"
+            }
+          },
+          "children": [
+            {
+              "name": "En-tête",
+              "type": "FRAME",
+              "layout": {
+                "mode": "row",
+                "primaryAxisAlign": "SPACE_BETWEEN",
+                "counterAxisAlign": "CENTER",
+                "sizing": {
+                  "horizontal": "FIXED",
+                  "vertical": "FIXED"
+                }
+              },
+              "children": [
+                {
+                  "name": "Marque",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 20,
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Logo_Full_C 1",
+                      "type": "INSTANCE",
+                      "component": "Logo_Full_C 1",
+                      "size": {
+                        "width": 132,
+                        "height": 44
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Navigation",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 32,
+                    "counterAxisAlign": "CENTER"
+                  },
+                  "children": [
+                    {
+                      "name": "Projets",
+                      "type": "TEXT",
+                      "characters": "Projets",
+                      "color": "#012C50",
+                      "font": {
+                        "family": "Geist",
+                        "style": "Medium",
+                        "size": 16,
+                        "lineHeight": 19
+                      }
+                    },
+                    {
+                      "name": "Services",
+                      "type": "TEXT",
+                      "characters": "Services",
+                      "color": "#012C50",
+                      "font": {
+                        "family": "Geist",
+                        "style": "Medium",
+                        "size": 16,
+                        "lineHeight": 19
+                      }
+                    },
+                    {
+                      "name": "À propos",
+                      "type": "TEXT",
+                      "characters": "À propos",
+                      "color": "#012C50",
+                      "font": {
+                        "family": "Geist",
+                        "style": "Medium",
+                        "size": 16,
+                        "lineHeight": 19
+                      }
+                    },
+                    {
+                      "name": "Contact",
+                      "type": "TEXT",
+                      "characters": "Contact",
+                      "color": "#012C50",
+                      "font": {
+                        "family": "Geist",
+                        "style": "Medium",
+                        "size": 16,
+                        "lineHeight": 19
+                      }
+                    },
+                    {
+                      "use": "Portfolio / Bouton contact",
+                      "props": {
+                        "libell": "Discutons"
+                      },
+                      "size": {
+                        "width": 212,
+                        "height": 44
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Hero — composition originale",
+              "type": "FRAME",
+              "children": [
+                {
+                  "name": "Mask group",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Vector 2",
+                      "type": "VECTOR",
+                      "fill": "Turquoise Océanique/TO 5",
+                      "size": {
+                        "width": 1196,
+                        "height": 344
+                      }
+                    },
+                    {
+                      "name": "Vector 4",
+                      "type": "VECTOR",
+                      "fill": "Turquoise Océanique/TO 5",
+                      "size": {
+                        "width": 1196,
+                        "height": 344
+                      }
+                    },
+                    {
+                      "name": "Vector 3",
+                      "type": "VECTOR",
+                      "fill": "Bleu Profond/BP 4",
+                      "opacity": 0.33000001311302185,
+                      "size": {
+                        "width": 1096,
+                        "height": 399
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Cartes de visite 1",
+                  "type": "RECTANGLE",
+                  "fills": [
+                    {
+                      "image": "FIT"
+                    }
+                  ],
+                  "size": {
+                    "width": 840,
+                    "height": 462
+                  }
+                },
+                {
+                  "name": "Mask group",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Vector 2",
+                      "type": "VECTOR",
+                      "fill": "Turquoise Océanique/TO 5",
+                      "size": {
+                        "width": 1196,
+                        "height": 344
+                      }
+                    },
+                    {
+                      "name": "Vector 5",
+                      "type": "VECTOR",
+                      "fill": "Turquoise Océanique/TO 4",
+                      "opacity": 0.75,
+                      "size": {
+                        "width": 457,
+                        "height": 79
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Titre et appel à action",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "column",
+                    "gap": 24,
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Identités visuelles,\nédition, webdesign.",
+                      "type": "TEXT",
+                      "characters": "Identités visuelles,\nédition, webdesign.",
+                      "color": "#01497C",
+                      "font": {
+                        "family": "Gloock",
+                        "size": 72,
+                        "lineHeight": 74,
+                        "letterSpacing": -2
+                      }
+                    },
+                    {
+                      "use": "Portfolio / Bouton principal",
+                      "props": {
+                        "libell": "Voir les projets"
+                      },
+                      "size": {
+                        "width": 232,
+                        "height": 44
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Projet du hero — légende éditable",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "padding": {
+                      "right": 14,
+                      "left": 22
+                    },
+                    "primaryAxisAlign": "SPACE_BETWEEN",
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "fill": "Turquoise Océanique/TO 6",
+                  "cornerRadius": 20,
+                  "children": [
+                    {
+                      "name": "Identité Lucas",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "HUG"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Identité visuelle",
+                          "type": "TEXT",
+                          "characters": "Identité visuelle",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "size": 12,
+                            "lineHeight": 14
+                          }
+                        },
+                        {
+                          "name": "Lucas Philippin",
+                          "type": "TEXT",
+                          "characters": "Lucas Philippin",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "style": "Medium",
+                            "size": 15,
+                            "lineHeight": 18
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "use": "Portfolio / Ouvrir un projet",
+                      "size": {
+                        "width": 40,
+                        "height": 40
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Filtres des projets",
+              "type": "FRAME",
+              "layout": {
+                "mode": "row",
+                "primaryAxisAlign": "SPACE_BETWEEN",
+                "counterAxisAlign": "CENTER",
+                "sizing": {
+                  "horizontal": "FIXED",
+                  "vertical": "FIXED"
+                }
+              },
+              "children": [
+                {
+                  "name": "Disciplines",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 12,
+                    "sizing": {
+                      "horizontal": "HUG",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "children": [
+                    {
+                      "use": "Portfolio / Filtre actif",
+                      "props": {
+                        "libell": "Tous"
+                      },
+                      "size": {
+                        "width": 96,
+                        "height": 36
+                      }
+                    },
+                    {
+                      "use": "Portfolio / Filtre",
+                      "props": {
+                        "libell": "Branding"
+                      },
+                      "size": {
+                        "width": 96,
+                        "height": 36
+                      }
+                    },
+                    {
+                      "use": "Portfolio / Filtre",
+                      "props": {
+                        "libell": "Web"
+                      },
+                      "size": {
+                        "width": 96,
+                        "height": 36
+                      }
+                    },
+                    {
+                      "use": "Portfolio / Filtre",
+                      "props": {
+                        "libell": "Print"
+                      },
+                      "size": {
+                        "width": 96,
+                        "height": 36
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "5 projets",
+                  "type": "TEXT",
+                  "characters": "5 projets",
+                  "color": "#012C50",
+                  "font": {
+                    "family": "Geist",
+                    "size": 13,
+                    "lineHeight": 16
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Galerie asymétrique — cinq projets",
+              "type": "FRAME",
+              "layout": {
+                "mode": "row",
+                "gap": 16,
+                "sizing": {
+                  "horizontal": "FILL",
+                  "vertical": "FIXED"
+                }
+              },
+              "children": [
+                {
+                  "use": "Portfolio / Carte projet",
+                  "props": {
+                    "titre": "Croix-Rouge Compétence",
+                    "discipline": "Édition · illustration"
+                  },
+                  "size": {
+                    "width": 867,
+                    "height": 489
+                  }
+                },
+                {
+                  "name": "Frame 1",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "column",
+                    "gap": 16,
+                    "primaryAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FILL",
+                      "vertical": "FILL"
+                    }
+                  },
+                  "children": [
+                    {
+                      "use": "ProjetsPremiReRangE",
+                      "props": {
+                        "portfolio_carte_projet_props": {
+                          "titre": "Lucas Philippin",
+                          "discipline": "Identité visuelle"
+                        },
+                        "portfolio_carte_projet_props_2": {
+                          "titre": "Modèles de CV",
+                          "discipline": "Design éditorial · Figma"
+                        }
+                      }
+                    },
+                    {
+                      "use": "ProjetsPremiReRangE",
+                      "props": {
+                        "portfolio_carte_projet_props": {
+                          "titre": "Résiop",
+                          "discipline": "Identité visuelle"
+                        },
+                        "portfolio_carte_projet_props_2": {
+                          "titre": "Raise",
+                          "discipline": "Identité visuelle"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Pied de page",
+              "type": "FRAME",
+              "layout": {
+                "mode": "column",
+                "padding": {
+                  "top": 14
+                },
+                "sizing": {
+                  "horizontal": "FIXED",
+                  "vertical": "FIXED"
+                }
+              },
+              "children": [
+                {
+                  "name": "Contact et signature",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "padding": {
+                      "right": 28,
+                      "left": 28
+                    },
+                    "primaryAxisAlign": "SPACE_BETWEEN",
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "fill": "Gris/Blanc",
+                  "cornerRadius": {
+                    "topLeftRadius": 32,
+                    "topRightRadius": 32
+                  },
+                  "children": [
+                    {
+                      "name": "Signature",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "row",
+                        "gap": 22,
+                        "counterAxisAlign": "CENTER",
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "FIXED"
+                        }
+                      },
+                      "children": [
+                        {
+                          "use": "app-icon",
+                          "size": {
+                            "width": 40,
+                            "height": 40
+                          }
+                        },
+                        {
+                          "name": "Lucas Philippin",
+                          "type": "TEXT",
+                          "characters": "Lucas Philippin",
+                          "color": "#01497C",
+                          "font": {
+                            "family": "Gloock",
+                            "size": 16,
+                            "lineHeight": 19
+                          }
+                        },
+                        {
+                          "name": "Designer graphique",
+                          "type": "TEXT",
+                          "characters": "Designer graphique",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "size": 13,
+                            "lineHeight": 16
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Prendre contact",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "row",
+                        "gap": 24,
+                        "counterAxisAlign": "CENTER",
+                        "sizing": {
+                          "horizontal": "HUG",
+                          "vertical": "FIXED"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Vous avez un projet ?",
+                          "type": "TEXT",
+                          "characters": "Vous avez un projet ?",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "size": 14,
+                            "lineHeight": 17
+                          }
+                        },
+                        {
+                          "use": "Portfolio / Bouton contour",
+                          "props": {
+                            "libell": "Discutons"
+                          },
+                          "size": {
+                            "width": 184,
+                            "height": 44
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "colors": {
+    "Bleu Profond/Bleu profond": "#01497C",
+    "Bleu Profond/BP 4": "#B2CCDE",
+    "Turquoise Océanique/TO 2": "#4BA2C5",
+    "Turquoise Océanique/TO 4": "#B6DDEB",
+    "Turquoise Océanique/TO 5": "#DAEDF4",
+    "Turquoise Océanique/TO 6": "#F0F9FB",
+    "Gris/Blanc": "#FFFFFF"
+  }
+}

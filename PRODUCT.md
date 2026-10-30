@@ -68,6 +68,7 @@ Les sources locales sont des exports du portfolio Adobe Portfolio, accompagnés 
 - Les cinq autres dossiers de `contenu` : pages détaillées des réalisations et médias associés, dont images et vidéos.
 - `charte/Couleurs.png`, `charte/Exemple1.jpg`, `charte/Exemple2.pdf` : références de charte fournies.
 - `charte/Logo_Background_Square.svg`, `charte/Logo_C.svg`, `charte/Logo_Full_C.svg`, `charte/Logo_Ico.png` : éléments de logo fournis.
+- `charte/plantes/Citrons.svg`, `charte/plantes/Fleur.svg`, `charte/plantes/Plante 1.svg`, `charte/plantes/Plante 2.svg`, `charte/plantes/Plante 3.svg`, `charte/plantes/Plante 4.svg`, `charte/plantes/Plante 5.svg` : éléments graphiques secondaires fournis.
 
 Les réalisations documentées constituent la preuve du travail. Aucun témoignage, résultat chiffré, tarif ou engagement commercial supplémentaire n’a été confirmé dans cet échange ; ne pas en inventer.
 
