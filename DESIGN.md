@@ -227,6 +227,8 @@ Tally est la source du formulaire. Le parent transparent ne dessine pas de panne
 
 ### Mouvement
 
+L'overlay des vignettes d'accueil entre par un fondu de 550 ms ; la légende suit après 60 ms, sur 500 ms, avec un déplacement vertical discret de 6 px. La courbe locale `cubic-bezier(.22,.61,.36,1)` rend cette arrivée plus progressive que les retours d'état rapides du site. Le même mouvement accompagne le focus clavier et la sélection au scroll mobile. L'ancien overlay mobile s'efface immédiatement pour ne jamais afficher deux projets actifs.
+
 Courbe commune : `cubic-bezier(.16, 1, .3, 1)`. Révélations subtiles, contenu visible même sans JavaScript, transitions de légendes et changements d’image courts. Les animations sont supprimées lorsque la préférence de réduction du mouvement est active, sans masquer le contenu ni les états. Ne pas multiplier les animations pour rendre une finition plus visible.
 
 ## Do's and Don'ts

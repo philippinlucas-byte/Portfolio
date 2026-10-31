@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-31T14:06:50.046009+00:00",
+  "generatedAt": "2026-10-31T15:21:59.539452+00:00",
   "title": "Design System: Lucas Philippin",
   "extensions": {
     "colorMeta": {
@@ -181,6 +181,16 @@
         "name": "lightbox-change",
         "value": "320ms",
         "purpose": "Previous/next image feedback."
+      },
+      {
+        "name": "homepage-overlay-enter",
+        "value": "550ms cubic-bezier(.22,.61,.36,1)",
+        "purpose": "Fade in blur and shading on desktop hover/focus and mobile scroll selection."
+      },
+      {
+        "name": "homepage-caption-enter",
+        "value": "500ms cubic-bezier(.22,.61,.36,1) 60ms",
+        "purpose": "Reveal caption with a restrained 6px rise."
       }
     ],
     "breakpoints": [
@@ -327,7 +337,7 @@
       "kind": "card",
       "description": "Progressive blur and darkening, diffuse text shadow. On narrow or touch layouts home.js selects one visible card nearest screen centre; this preview demonstrates the active appearance.",
       "html": "<a class=\"ds-card is-scroll-active\" href=\"/webdesign-raise/\" aria-label=\"Raise — Webdesign, 2025\"><img src=\"/assets/webdesign-raise-cover-640.webp\" width=\"640\" height=\"360\" alt=\"\"><div class=\"ds-caption\"><div><p>WEBDESIGN</p><h3>Raise</h3></div><time datetime=\"2025\">2025</time></div></a>",
-      "css": ".ds-card{position:relative;display:block;max-width:422px;overflow:hidden;border-radius:20px;color:white;text-decoration:none;isolation:isolate}.ds-card img{display:block;width:100%;height:auto;aspect-ratio:422/236;object-fit:cover}.ds-card:after{content:\"\";position:absolute;inset:25% 0 0;background:linear-gradient(transparent 15%,rgba(1,44,80,.58));mask-image:linear-gradient(transparent,black 85%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption{font-family:var(--text,Geist,system-ui,sans-serif);position:absolute;z-index:1;inset:auto 14px 14px 20px;display:flex;align-items:end;justify-content:space-between;gap:12px;text-shadow:0 1px 3px rgba(1,44,80,.7);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption h3{margin:0;font:400 20px/1.2 var(--display,Gloock,Georgia,serif);letter-spacing:-.02em}.ds-caption p{margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.095em;line-height:1.5}.ds-caption time{font-size:12px}.ds-card:is(:hover,:focus-visible):after,.ds-card:is(:hover,:focus-visible) .ds-caption{opacity:1}.ds-card:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(hover:none){.ds-card:after,.ds-card .ds-caption{opacity:1}}@media(prefers-reduced-motion:reduce){.ds-card:after,.ds-caption{transition:none}}.ds-card:before{content:\"\";position:absolute;z-index:1;inset:0;pointer-events:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-card:after{z-index:2;inset:0;mask-image:none;background:linear-gradient(to bottom,transparent 12%,rgba(1,44,80,.06) 35%,rgba(1,44,80,.26) 65%,rgba(1,44,80,.72) 100%)}.ds-caption{z-index:3;text-shadow:0 5px 14px rgba(1,44,80,.35)}.ds-card:is(:hover,:focus-visible,.is-scroll-active):before,.ds-card.is-scroll-active:after,.ds-card.is-scroll-active .ds-caption{opacity:1}@media(prefers-reduced-motion:reduce){.ds-card:before{transition:none}}",
+      "css": ".ds-card{position:relative;display:block;max-width:422px;overflow:hidden;border-radius:20px;color:white;text-decoration:none;isolation:isolate}.ds-card img{display:block;width:100%;height:auto;aspect-ratio:422/236;object-fit:cover}.ds-card:after{content:\"\";position:absolute;inset:25% 0 0;background:linear-gradient(transparent 15%,rgba(1,44,80,.58));mask-image:linear-gradient(transparent,black 85%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption{font-family:var(--text,Geist,system-ui,sans-serif);position:absolute;z-index:1;inset:auto 14px 14px 20px;display:flex;align-items:end;justify-content:space-between;gap:12px;text-shadow:0 1px 3px rgba(1,44,80,.7);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption h3{margin:0;font:400 20px/1.2 var(--display,Gloock,Georgia,serif);letter-spacing:-.02em}.ds-caption p{margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.095em;line-height:1.5}.ds-caption time{font-size:12px}.ds-card:is(:hover,:focus-visible):after,.ds-card:is(:hover,:focus-visible) .ds-caption{opacity:1}.ds-card:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(hover:none){.ds-card:after,.ds-card .ds-caption{opacity:1}}@media(prefers-reduced-motion:reduce){.ds-card:after,.ds-caption{transition:none}}.ds-card:before{content:\"\";position:absolute;z-index:1;inset:0;pointer-events:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-card:after{z-index:2;inset:0;mask-image:none;background:linear-gradient(to bottom,transparent 12%,rgba(1,44,80,.06) 35%,rgba(1,44,80,.26) 65%,rgba(1,44,80,.72) 100%)}.ds-caption{z-index:3;text-shadow:0 5px 14px rgba(1,44,80,.35)}.ds-card:is(:hover,:focus-visible,.is-scroll-active):before,.ds-card.is-scroll-active:after,.ds-card.is-scroll-active .ds-caption{opacity:1}@media(prefers-reduced-motion:reduce){.ds-card:before{transition:none}}@keyframes ds-overlay-enter{from{opacity:0}to{opacity:1}}@keyframes ds-caption-enter{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}.ds-card:is(:hover,:focus-visible,.is-scroll-active):before,.ds-card:is(:hover,:focus-visible,.is-scroll-active):after{animation:ds-overlay-enter .55s cubic-bezier(.22,.61,.36,1) both}.ds-card:is(:hover,:focus-visible,.is-scroll-active) .ds-caption{animation:ds-caption-enter .5s cubic-bezier(.22,.61,.36,1) .06s both}@media(prefers-reduced-motion:reduce){.ds-card:before,.ds-card:after,.ds-card .ds-caption{animation:none}}",
       "refersTo": "project-card"
     }
   ],

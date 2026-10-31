@@ -180,8 +180,30 @@
 .home-pilot .gallery.scroll-overlays .project-card:not(.is-scroll-active) .art::after,
 .home-pilot .gallery.scroll-overlays .project-card:not(.is-scroll-active) .project-caption { transition: none; }
 .home-pilot .gallery.scroll-overlays .project-card:hover .art img { transform: none; filter: none; }
+/* A deliberate reveal, including when a scroll-selected card first appears. */
+@keyframes project-overlay-arrive {
+ from { opacity: 0; }
+ to { opacity: 1; }
+}
+@keyframes project-caption-arrive {
+ from { opacity: 0; transform: translateY(6px); }
+ to { opacity: 1; transform: translateY(0); }
+}
+.home-pilot .gallery:not(.scroll-overlays) .project-card:is(:hover,:focus-visible) .art::before,
+.home-pilot .gallery:not(.scroll-overlays) .project-card:is(:hover,:focus-visible) .art::after,
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .art::before,
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .art::after {
+ animation: project-overlay-arrive .55s cubic-bezier(.22,.61,.36,1) both;
+}
+.home-pilot .gallery:not(.scroll-overlays) .project-card:is(:hover,:focus-visible) .project-caption,
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .project-caption {
+ animation: project-caption-arrive .5s cubic-bezier(.22,.61,.36,1) .06s both;
+}
 @media (prefers-reduced-motion: reduce) {
  .home-pilot .gallery .art::before { transition: none; }
+ .home-pilot .gallery .project-card .art::before,
+ .home-pilot .gallery .project-card .art::after,
+ .home-pilot .gallery .project-card .project-caption { animation: none; }
 }
 @media (max-width: 380px) {
  .site-shell .brand img { width: 90px; }
