@@ -80,6 +80,7 @@ if (dialog && typeof dialog.showModal === 'function') {
   });
   const stage=dialog.querySelector('.lightbox-image-wrap');
   stage.addEventListener('touchstart',event=> {touchX=event.touches.length===1?event.touches[0].clientX:null;}, {passive:true});
+  stage.addEventListener('touchcancel',()=>{touchX=null;}, {passive:true});
   stage.addEventListener('touchend',event=> {
     if(touchX===null) return;
     const distance=event.changedTouches[0].clientX-touchX;

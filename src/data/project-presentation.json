@@ -1,0 +1,79 @@
+{
+  "termino-logic-croix-rouge-competence": {
+    "title": "Croix-Rouge Compétence",
+    "subtitle": "Termino-Logic",
+    "keywords": [
+      "Jeu de société",
+      "Illustration",
+      "Édition",
+      "Identité"
+    ],
+    "details": {
+      "Client": "Croix-Rouge Compétence Nouvelle-Aquitaine",
+      "Support": "Jeu de société, cartes et livret",
+      "Mission": "Identité visuelle, structuration du contenu, mise en page",
+      "Outils": "InDesign, Excel"
+    },
+    "summary": "Un jeu de société de 778 cartes pour apprendre la terminologie médicale. Identité visuelle, organisation du contenu et livret de règles ont été conçus avec l’équipe pédagogique de la Croix-Rouge Compétence.",
+    "relocateIntro": true
+  },
+  "identite-graphique-lucas-philippin": {
+    "title": "Lucas Philippin",
+    "subtitle": "Identité visuelle",
+    "keywords": [
+      "Identité",
+      "Charte graphique",
+      "Print"
+    ],
+    "details": {
+      "Client": "Lucas Philippin",
+      "Support": "Charte graphique et cartes de visite",
+      "Mission": "Conception de l’identité visuelle"
+    }
+  },
+  "5-modular-resume-templates": {
+    "title": "5 modèles de CV",
+    "subtitle": "Kit de CV Figma · Modèles modulaires",
+    "keywords": [
+      "Mise en page",
+      "Composants",
+      "Auto-layout"
+    ],
+    "details": {
+      "Support": "Cinq modèles de CV, deux pages chacun",
+      "Mission": "Conception de documents modulaires",
+      "Outils": "Figma"
+    },
+    "summary": "Cinq modèles de CV modulaires conçus sur Figma. Composants, auto-layout et variables permettent de personnaliser les deux pages de chaque modèle tout en conservant une mise en page cohérente."
+  },
+  "webdesign-raise": {
+    "title": "Raise",
+    "subtitle": "Webdesign",
+    "keywords": [
+      "Webdesign",
+      "Expérience utilisateur",
+      "Direction graphique"
+    ],
+    "details": {
+      "Support": "Maquette de site web",
+      "Mission": "Conception graphique et expérience utilisateur",
+      "Outils": "Figma"
+    },
+    "summary": "Une proposition de webdesign pour une prop firm, pensée pour de jeunes investisseurs. Une interface épurée qui place la clarté de l’information et la confiance au cœur du parcours.",
+    "relocateIntro": true
+  },
+  "logo-and-business-card-resiop": {
+    "title": "Résiop",
+    "subtitle": "Identité · Logo et carte de visite",
+    "keywords": [
+      "Identité",
+      "Logo",
+      "Print"
+    ],
+    "details": {
+      "Client": "Consultant industriel — Résiop",
+      "Support": "Logo et carte de visite",
+      "Mission": "Conception de l’identité visuelle"
+    }
+  }
+}

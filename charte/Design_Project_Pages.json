@@ -1,0 +1,1450 @@
+{
+  "components": {
+    "FougReArriRePlan5": {
+      "node": {
+        "name": "Fougère — arrière-plan, 5 %",
+        "type": "FRAME",
+        "children": [
+          {
+            "name": "Calque 1",
+            "type": "GROUP",
+            "children": [
+              {
+                "name": "Vector",
+                "type": "VECTOR",
+                "constraints": {
+                  "horizontal": "SCALE",
+                  "vertical": "SCALE"
+                },
+                "fill": "Turquoise Océanique/TO 5",
+                "size": "{{vector_size}}"
+              }
+            ]
+          }
+        ]
+      },
+      "props": [
+        "vector_size"
+      ]
+    },
+    "DTailDuProjet": {
+      "node": {
+        "name": "Détail du projet",
+        "type": "FRAME",
+        "layout": {
+          "mode": "row",
+          "gap": 14,
+          "sizing": {
+            "horizontal": "FILL",
+            "vertical": "HUG"
+          }
+        },
+        "children": [
+          {
+            "name": "Libellé",
+            "type": "TEXT",
+            "characters": "{{libell_characters}}",
+            "color": "#82BDCF",
+            "font": {
+              "family": "Geist",
+              "size": 16
+            }
+          },
+          {
+            "name": "Valeur",
+            "type": "TEXT",
+            "characters": "{{valeur_characters}}",
+            "color": "#597184",
+            "font": {
+              "family": "Geist",
+              "size": 16
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell_characters",
+        "valeur_characters"
+      ]
+    },
+    "ObjectifPDagogique": {
+      "node": {
+        "name": "Objectif pédagogique",
+        "type": "FRAME",
+        "layout": {
+          "mode": "row",
+          "gap": 18
+        },
+        "children": [
+          {
+            "name": "Symbole de l’objectif",
+            "type": "FRAME",
+            "stroke": "#C9E5EF",
+            "strokeWeight": 2,
+            "cornerRadius": 28,
+            "children": [
+              {
+                "name": "lightbulb",
+                "type": "FRAME",
+                "children": [
+                  {
+                    "name": "Vector",
+                    "type": "VECTOR",
+                    "constraints": {
+                      "horizontal": "SCALE",
+                      "vertical": "SCALE"
+                    },
+                    "stroke": "Bleu Profond/Bleu profond",
+                    "strokeWeight": 1.7000000476837158,
+                    "size": "{{vector_size}}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Texte de l’objectif",
+            "type": "FRAME",
+            "layout": {
+              "mode": "column",
+              "gap": 4,
+              "sizing": {
+                "horizontal": "FIXED",
+                "vertical": "HUG"
+              }
+            },
+            "children": [
+              {
+                "name": "Objectif",
+                "type": "TEXT",
+                "characters": "{{objectif_characters}}",
+                "color": "#01497C",
+                "font": {
+                  "family": "Geist",
+                  "style": "SemiBold",
+                  "size": 16
+                }
+              },
+              {
+                "name": "Description",
+                "type": "TEXT",
+                "characters": "{{description_characters}}",
+                "color": "#597184",
+                "font": {
+                  "family": "Geist",
+                  "size": 14,
+                  "lineHeight": 23
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "props": [
+        "vector_size",
+        "objectif_characters",
+        "description_characters"
+      ]
+    },
+    "TapeDeCrAtion": {
+      "node": {
+        "name": "Étape de création",
+        "type": "FRAME",
+        "layout": {
+          "mode": "column",
+          "gap": 18,
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "HUG"
+          }
+        },
+        "children": [
+          {
+            "name": "Progression",
+            "type": "FRAME",
+            "layout": {
+              "mode": "row",
+              "gap": 14,
+              "counterAxisAlign": "CENTER",
+              "sizing": {
+                "horizontal": "FILL",
+                "vertical": "HUG"
+              }
+            },
+            "children": [
+              {
+                "name": "Numéro de l’étape",
+                "type": "FRAME",
+                "stroke": "#C9E5EF",
+                "strokeWeight": 2,
+                "cornerRadius": 26,
+                "children": [
+                  {
+                    "name": "Numéro",
+                    "type": "TEXT",
+                    "characters": "{{num_ro_characters}}",
+                    "align": {
+                      "horizontal": "CENTER"
+                    },
+                    "color": "#01497C",
+                    "font": {
+                      "family": "Geist",
+                      "style": "SemiBold",
+                      "size": 17
+                    }
+                  }
+                ]
+              },
+              {
+                "name": "Liaison",
+                "type": "RECTANGLE",
+                "fill": "#C9E5EF",
+                "size": {
+                  "width": 85,
+                  "height": 2
+                }
+              }
+            ]
+          },
+          {
+            "name": "Description de l’étape",
+            "type": "FRAME",
+            "layout": {
+              "mode": "column",
+              "gap": 10,
+              "sizing": {
+                "horizontal": "FILL",
+                "vertical": "HUG"
+              }
+            },
+            "children": [
+              {
+                "name": "Étape",
+                "type": "TEXT",
+                "characters": "{{tape_characters}}",
+                "color": "#01497C",
+                "font": {
+                  "family": "Geist",
+                  "style": "SemiBold",
+                  "size": 16
+                }
+              },
+              {
+                "name": "Détail",
+                "type": "TEXT",
+                "characters": "{{d_tail_characters}}",
+                "color": "#597184",
+                "font": {
+                  "family": "Geist",
+                  "size": 14,
+                  "lineHeight": 20
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "props": [
+        "num_ro_characters",
+        "tape_characters",
+        "d_tail_characters"
+      ]
+    },
+    "Portfolio / Bouton contact": {
+      "node": {
+        "name": "Portfolio / Bouton contact",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "padding": {
+            "right": 30,
+            "left": 32
+          },
+          "primaryAxisAlign": "SPACE_BETWEEN",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 2",
+        "cornerRadius": 27,
+        "children": [
+          {
+            "name": "Discutons",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#012C50",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 16,
+              "lineHeight": 19
+            }
+          },
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Bloc Titre": {
+      "node": {
+        "name": "Bloc Titre",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "column",
+          "gap": 20
+        },
+        "children": [
+          {
+            "name": "Nom du client",
+            "type": "TEXT",
+            "characters": "Croix-Rouge\nCompétence",
+            "textStyle": "Title Web",
+            "color": "#01497C"
+          },
+          {
+            "name": "Nom du projet",
+            "type": "TEXT",
+            "characters": "TERMINOLOGIC",
+            "textStyle": "Subtitle Web",
+            "color": "#84C4DC"
+          }
+        ]
+      }
+    },
+    "Portfolio / Filtre": {
+      "node": {
+        "name": "Portfolio / Filtre",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "primaryAxisAlign": "CENTER",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 6",
+        "stroke": "Turquoise Océanique/TO 4",
+        "strokeWeight": 1,
+        "cornerRadius": 18,
+        "children": [
+          {
+            "name": "Tous",
+            "type": "TEXT",
+            "characters": "{{libell}}",
+            "color": "#012C50",
+            "font": {
+              "family": "Geist",
+              "style": "Medium",
+              "size": 14,
+              "lineHeight": 17
+            }
+          }
+        ]
+      },
+      "props": [
+        "libell"
+      ]
+    },
+    "Portfolio/Ouvrir un projet": {
+      "node": {
+        "name": "Portfolio/Ouvrir un projet",
+        "type": "COMPONENT",
+        "layout": {
+          "mode": "row",
+          "primaryAxisAlign": "CENTER",
+          "counterAxisAlign": "CENTER",
+          "sizing": {
+            "horizontal": "FIXED",
+            "vertical": "FIXED"
+          }
+        },
+        "fill": "Turquoise Océanique/TO 6",
+        "stroke": "Turquoise Océanique/TO 4",
+        "strokeWeight": 2,
+        "cornerRadius": 20,
+        "children": [
+          {
+            "name": "Portfolio / Flèche",
+            "type": "INSTANCE",
+            "component": "Portfolio / Flèche",
+            "size": {
+              "width": 20,
+              "height": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "nodes": [
+    {
+      "name": "Pages Projet",
+      "type": "FRAME",
+      "fill": "Turquoise Océanique/TO 6",
+      "children": [
+        {
+          "name": "Fond — botanique discrète",
+          "type": "FRAME",
+          "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "CENTER"
+          },
+          "children": [
+            {
+              "use": "FougReArriRePlan5",
+              "props": {
+                "vector_size": {
+                  "width": 865,
+                  "height": 545
+                }
+              }
+            },
+            {
+              "name": "Plante — bord hauche, 8 %",
+              "type": "FRAME",
+              "opacity": 0.07999999821186066,
+              "children": [
+                {
+                  "name": "Calque 1",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "children": [
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 300,
+                            "height": 580
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "use": "FougReArriRePlan5",
+              "props": {
+                "vector_size": {
+                  "width": 832,
+                  "height": 525
+                }
+              }
+            },
+            {
+              "name": "Plante — bord droit, 6 %",
+              "type": "FRAME",
+              "opacity": 0.05999999865889549,
+              "children": [
+                {
+                  "name": "Calque 1",
+                  "type": "GROUP",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "children": [
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 0,
+                            "height": 0
+                          }
+                        },
+                        {
+                          "name": "Vector",
+                          "type": "VECTOR",
+                          "constraints": {
+                            "horizontal": "SCALE",
+                            "vertical": "SCALE"
+                          },
+                          "fill": "Turquoise Océanique/TO 2",
+                          "size": {
+                            "width": 668,
+                            "height": 516
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Croix-Rouge française — Présentation",
+          "type": "FRAME",
+          "layout": {
+            "mode": "column",
+            "counterAxisAlign": "CENTER",
+            "sizing": {
+              "horizontal": "FIXED",
+              "vertical": "HUG"
+            }
+          },
+          "constraints": {
+            "horizontal": "CENTER",
+            "vertical": "MIN"
+          },
+          "children": [
+            {
+              "name": "Hero",
+              "type": "FRAME",
+              "layout": {
+                "mode": "column",
+                "padding": {
+                  "bottom": 64
+                },
+                "primaryAxisAlign": "SPACE_BETWEEN",
+                "sizing": {
+                  "horizontal": "FIXED",
+                  "vertical": "FIXED"
+                }
+              },
+              "children": [
+                {
+                  "name": "En-tête",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "primaryAxisAlign": "SPACE_BETWEEN",
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Marque",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "row",
+                        "gap": 20,
+                        "counterAxisAlign": "CENTER",
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "FIXED"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Logo_Full_C 1",
+                          "type": "INSTANCE",
+                          "component": "Logo_Full_C 1",
+                          "size": {
+                            "width": 132,
+                            "height": 44
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Navigation",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "row",
+                        "gap": 32,
+                        "counterAxisAlign": "CENTER"
+                      },
+                      "children": [
+                        {
+                          "name": "Projets",
+                          "type": "TEXT",
+                          "characters": "Projets",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "style": "Medium",
+                            "size": 16,
+                            "lineHeight": 19
+                          }
+                        },
+                        {
+                          "name": "Services",
+                          "type": "TEXT",
+                          "characters": "Services",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "style": "Medium",
+                            "size": 16,
+                            "lineHeight": 19
+                          }
+                        },
+                        {
+                          "name": "À propos",
+                          "type": "TEXT",
+                          "characters": "À propos",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "style": "Medium",
+                            "size": 16,
+                            "lineHeight": 19
+                          }
+                        },
+                        {
+                          "name": "Contact",
+                          "type": "TEXT",
+                          "characters": "Contact",
+                          "color": "#012C50",
+                          "font": {
+                            "family": "Geist",
+                            "style": "Medium",
+                            "size": 16,
+                            "lineHeight": 19
+                          }
+                        },
+                        {
+                          "use": "Portfolio / Bouton contact",
+                          "props": {
+                            "libell": "Discutons"
+                          },
+                          "size": {
+                            "width": 212,
+                            "height": 44
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Présentation du projet",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 120,
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FILL",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Frame 4",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "gap": 56,
+                        "sizing": {
+                          "horizontal": "FILL",
+                          "vertical": "HUG"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Retour aux projets",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "row",
+                            "gap": 20,
+                            "counterAxisAlign": "CENTER"
+                          },
+                          "children": [
+                            {
+                              "name": "Flèche de retour",
+                              "type": "INSTANCE",
+                              "component": "Portfolio / Flèche",
+                              "size": {
+                                "width": 20,
+                                "height": 20
+                              }
+                            },
+                            {
+                              "name": "Tous les projets",
+                              "type": "TEXT",
+                              "characters": "Tous les projets",
+                              "color": "#597184",
+                              "font": {
+                                "family": "Geist",
+                                "style": "Medium",
+                                "size": 17
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Frame 9",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "column",
+                            "gap": 28
+                          },
+                          "children": [
+                            {
+                              "use": "Bloc Titre",
+                              "variants": {
+                                "Size": "Big",
+                                "Subtitle": "Down"
+                              }
+                            },
+                            {
+                              "name": "Disciplines du projet",
+                              "type": "FRAME",
+                              "layout": {
+                                "mode": "row",
+                                "gap": 12
+                              },
+                              "children": [
+                                {
+                                  "use": "Portfolio / Filtre",
+                                  "props": {
+                                    "libell": "Jeu de société"
+                                  },
+                                  "size": {
+                                    "width": 129,
+                                    "height": 32
+                                  }
+                                },
+                                {
+                                  "use": "Portfolio / Filtre",
+                                  "props": {
+                                    "libell": "Illustration"
+                                  },
+                                  "size": {
+                                    "width": 106,
+                                    "height": 32
+                                  }
+                                },
+                                {
+                                  "use": "Portfolio / Filtre",
+                                  "props": {
+                                    "libell": "Édition"
+                                  },
+                                  "size": {
+                                    "width": 78,
+                                    "height": 32
+                                  }
+                                },
+                                {
+                                  "use": "Portfolio / Filtre",
+                                  "props": {
+                                    "libell": "Identité"
+                                  },
+                                  "size": {
+                                    "width": 84,
+                                    "height": 32
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Frame 3",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "column",
+                            "gap": 28,
+                            "sizing": {
+                              "horizontal": "FILL",
+                              "vertical": "HUG"
+                            }
+                          },
+                          "children": [
+                            {
+                              "name": "Description du projet",
+                              "type": "TEXT",
+                              "characters": "Terminologic est un jeu de société pédagogique conçu pour sensibiliser aux premiers secours.\nCe projet, réalisé pour la Croix-Rouge française, allie un univers graphique ludique et une approche pédagogique claire, afin de rendre l’apprentissage accessible et engageant pour tous.",
+                              "color": "#597184",
+                              "font": {
+                                "family": "Geist",
+                                "size": 18,
+                                "lineHeight": 26
+                              }
+                            },
+                            {
+                              "name": "Séparateur",
+                              "type": "RECTANGLE",
+                              "fill": "#C9E5EF",
+                              "size": {
+                                "width": 541,
+                                "height": 2
+                              }
+                            },
+                            {
+                              "name": "Fiche du projet",
+                              "type": "FRAME",
+                              "layout": {
+                                "mode": "column",
+                                "gap": 9,
+                                "sizing": {
+                                  "horizontal": "FILL",
+                                  "vertical": "HUG"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "use": "DTailDuProjet",
+                                  "props": {
+                                    "libell_characters": "Client",
+                                    "valeur_characters": "Croix-Rouge française Compétence"
+                                  }
+                                },
+                                {
+                                  "use": "DTailDuProjet",
+                                  "props": {
+                                    "libell_characters": "Année",
+                                    "valeur_characters": "2026"
+                                  }
+                                },
+                                {
+                                  "use": "DTailDuProjet",
+                                  "props": {
+                                    "libell_characters": "Support",
+                                    "valeur_characters": "Jeu de société"
+                                  }
+                                },
+                                {
+                                  "use": "DTailDuProjet",
+                                  "props": {
+                                    "libell_characters": "Mission",
+                                    "valeur_characters": "Identité, illustration, édition"
+                                  }
+                                },
+                                {
+                                  "use": "DTailDuProjet",
+                                  "props": {
+                                    "libell_characters": "Outils",
+                                    "valeur_characters": "Illustrator, InDesign, Photoshop, Excel"
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Navigation des projets",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "row",
+                            "gap": 27,
+                            "counterAxisAlign": "CENTER"
+                          },
+                          "children": [
+                            {
+                              "use": "Portfolio/Ouvrir un projet",
+                              "variants": {
+                                "Outline": "Yes"
+                              },
+                              "size": {
+                                "width": 54,
+                                "height": 54
+                              }
+                            },
+                            {
+                              "name": "Numéro du projet",
+                              "type": "TEXT",
+                              "characters": "01 / 05",
+                              "color": "#01497C",
+                              "font": {
+                                "family": "Geist",
+                                "size": 16
+                              }
+                            },
+                            {
+                              "use": "Portfolio/Ouvrir un projet",
+                              "variants": {
+                                "Outline": "Yes"
+                              },
+                              "size": {
+                                "width": 54,
+                                "height": 54
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Frame 6",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "gap": 16,
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "FIXED"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Frame 5",
+                          "type": "FRAME",
+                          "children": [
+                            {
+                              "name": "Rectangle 1",
+                              "type": "RECTANGLE",
+                              "constraints": {
+                                "horizontal": "STRETCH",
+                                "vertical": "MIN"
+                              },
+                              "fill": "#3B749C",
+                              "cornerRadius": 20,
+                              "size": {
+                                "width": 1083,
+                                "height": 609
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Détails photographiques",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "row",
+                            "gap": 16,
+                            "sizing": {
+                              "horizontal": "FILL",
+                              "vertical": "FIXED"
+                            }
+                          },
+                          "children": [
+                            {
+                              "name": "Rectangle 1",
+                              "type": "RECTANGLE",
+                              "fill": "#3B749C",
+                              "cornerRadius": 20,
+                              "size": {
+                                "width": 350,
+                                "height": 210
+                              }
+                            },
+                            {
+                              "name": "Rectangle 2",
+                              "type": "RECTANGLE",
+                              "fill": "#3B749C",
+                              "cornerRadius": 20,
+                              "size": {
+                                "width": 350,
+                                "height": 210
+                              }
+                            },
+                            {
+                              "name": "Rectangle 3",
+                              "type": "RECTANGLE",
+                              "fill": "#3B749C",
+                              "cornerRadius": 20,
+                              "size": {
+                                "width": 350,
+                                "height": 210
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Croix-Rouge française — Étude de cas",
+              "type": "FRAME",
+              "layout": {
+                "mode": "column",
+                "padding": {
+                  "top": 64,
+                  "right": 102,
+                  "bottom": 64,
+                  "left": 102
+                },
+                "counterAxisAlign": "CENTER",
+                "sizing": {
+                  "horizontal": "FIXED",
+                  "vertical": "HUG"
+                }
+              },
+              "children": [
+                {
+                  "name": "Photographies du jeu",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 20,
+                    "primaryAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FILL",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Photographie du projet",
+                      "type": "FRAME",
+                      "fill": "Bleu Profond/BP 2",
+                      "cornerRadius": 16,
+                      "size": {
+                        "width": 1028,
+                        "height": 574
+                      }
+                    },
+                    {
+                      "name": "Détails de la boîte et des cartes",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "gap": 20,
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "FIXED"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Photographie du projet",
+                          "type": "FRAME",
+                          "fill": "Bleu Profond/BP 2",
+                          "cornerRadius": 16,
+                          "size": {
+                            "width": 492,
+                            "height": 277
+                          }
+                        },
+                        {
+                          "name": "Photographie du projet",
+                          "type": "FRAME",
+                          "fill": "Bleu Profond/BP 2",
+                          "cornerRadius": 16,
+                          "size": {
+                            "width": 492,
+                            "height": 277
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Contexte et intention",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "padding": {
+                      "top": 64,
+                      "bottom": 64
+                    },
+                    "primaryAxisAlign": "SPACE_BETWEEN",
+                    "sizing": {
+                      "horizontal": "FILL",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "use": "Bloc Titre",
+                      "variants": {
+                        "Size": "Mid",
+                        "Subtitle": "Top"
+                      }
+                    },
+                    {
+                      "name": "Intention du projet",
+                      "type": "TEXT",
+                      "characters": "La Croix-Rouge française souhaitait concevoir un outil pédagogique pour faciliter l’appropriation de son vocabulaire et de ses principes fondamentaux, auprès d’un large public.\n\nL’objectif : rendre des notions parfois complexes plus accessibles, à travers un format ludique, clair et engageant.\n\nTerminologic est né de cette volonté de transmettre, de créer du dialogue et de faire vivre les valeurs de la Croix-Rouge autrement, par le jeu.",
+                      "color": "#597184",
+                      "font": {
+                        "family": "Geist",
+                        "size": 16,
+                        "lineHeight": 24
+                      }
+                    },
+                    {
+                      "name": "Séparateur des objectifs",
+                      "type": "RECTANGLE",
+                      "fill": "#C9E5EF",
+                      "size": {
+                        "width": 2,
+                        "height": 278
+                      }
+                    },
+                    {
+                      "name": "Objectifs pédagogiques",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "gap": 27,
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "HUG"
+                        }
+                      },
+                      "children": [
+                        {
+                          "use": "ObjectifPDagogique",
+                          "props": {
+                            "vector_size": {
+                              "width": 14,
+                              "height": 23
+                            },
+                            "objectif_characters": "Sensibiliser",
+                            "description_characters": "Rendre les notions clés accessibles\nà tous, de manière ludique."
+                          }
+                        },
+                        {
+                          "use": "ObjectifPDagogique",
+                          "props": {
+                            "vector_size": {
+                              "width": 23,
+                              "height": 21
+                            },
+                            "objectif_characters": "Fédérer",
+                            "description_characters": "Créer un support commun pour nourrir\nle dialogue et la culture partagée."
+                          }
+                        },
+                        {
+                          "use": "ObjectifPDagogique",
+                          "props": {
+                            "vector_size": {
+                              "width": 21,
+                              "height": 23
+                            },
+                            "objectif_characters": "Transmettre",
+                            "description_characters": "Valoriser les principes et l’identité\nde la Croix-Rouge française."
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Règles du jeu et univers graphique",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 16,
+                    "primaryAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "FIXED"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Photographie du projet",
+                      "type": "FRAME",
+                      "fill": "Bleu Profond/BP 2",
+                      "cornerRadius": 16,
+                      "size": {
+                        "width": 894,
+                        "height": 442
+                      }
+                    },
+                    {
+                      "name": "Vocabulaire et identité",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "column",
+                        "gap": 16,
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "FILL"
+                        }
+                      },
+                      "children": [
+                        {
+                          "name": "Photographie du projet",
+                          "type": "FRAME",
+                          "fill": "Bleu Profond/BP 2",
+                          "cornerRadius": 16,
+                          "size": {
+                            "width": 623,
+                            "height": 213
+                          }
+                        },
+                        {
+                          "name": "Photographie du projet",
+                          "type": "FRAME",
+                          "fill": "Bleu Profond/BP 2",
+                          "cornerRadius": 16,
+                          "size": {
+                            "width": 623,
+                            "height": 213
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Processus de création",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": "App Icon W+D",
+                    "padding": {
+                      "top": 64,
+                      "bottom": 64
+                    },
+                    "counterAxisAlign": "MAX",
+                    "sizing": {
+                      "horizontal": "FILL",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "use": "Bloc Titre",
+                      "variants": {
+                        "Size": "Mid",
+                        "Subtitle": "Top"
+                      }
+                    },
+                    {
+                      "name": "Méthode de collaboration",
+                      "type": "TEXT",
+                      "characters": "Le projet a été mené en étroite collaboration avec les équipes de la Croix-Rouge française, de la définition du contenu à la conception graphique, pour aboutir à un jeu à la fois fidèle aux valeurs de l’institution et adapté à ses différents publics.",
+                      "color": "#597184",
+                      "font": {
+                        "family": "Geist",
+                        "size": 16,
+                        "lineHeight": 25
+                      }
+                    },
+                    {
+                      "name": "Étapes de création",
+                      "type": "FRAME",
+                      "layout": {
+                        "mode": "row",
+                        "gap": 20,
+                        "sizing": {
+                          "horizontal": "FIXED",
+                          "vertical": "HUG"
+                        }
+                      },
+                      "children": [
+                        {
+                          "use": "TapeDeCrAtion",
+                          "props": {
+                            "num_ro_characters": "01",
+                            "tape_characters": "Cadrage",
+                            "d_tail_characters": "Ateliers et travail\nsur les contenus\navec les équipes\nmétiers."
+                          }
+                        },
+                        {
+                          "use": "TapeDeCrAtion",
+                          "props": {
+                            "num_ro_characters": "02",
+                            "tape_characters": "Conception",
+                            "d_tail_characters": "Création du concept\ndu jeu, des mécaniques\net de l’univers graphique."
+                          }
+                        },
+                        {
+                          "use": "TapeDeCrAtion",
+                          "props": {
+                            "num_ro_characters": "03",
+                            "tape_characters": "Réalisation",
+                            "d_tail_characters": "Illustrations, design\ndes cartes, livret\nde règles et assets\nde production."
+                          }
+                        },
+                        {
+                          "name": "Étape de création",
+                          "type": "FRAME",
+                          "layout": {
+                            "mode": "column",
+                            "gap": 18,
+                            "sizing": {
+                              "horizontal": "FIXED",
+                              "vertical": "HUG"
+                            }
+                          },
+                          "children": [
+                            {
+                              "name": "Progression",
+                              "type": "FRAME",
+                              "layout": {
+                                "mode": "row",
+                                "gap": 14,
+                                "counterAxisAlign": "CENTER",
+                                "sizing": {
+                                  "horizontal": "FILL",
+                                  "vertical": "HUG"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "name": "Numéro de l’étape",
+                                  "type": "FRAME",
+                                  "stroke": "#C9E5EF",
+                                  "strokeWeight": 2,
+                                  "cornerRadius": 26,
+                                  "children": [
+                                    {
+                                      "name": "Numéro",
+                                      "type": "TEXT",
+                                      "characters": "04",
+                                      "align": {
+                                        "horizontal": "CENTER"
+                                      },
+                                      "color": "#01497C",
+                                      "font": {
+                                        "family": "Geist",
+                                        "style": "SemiBold",
+                                        "size": 17
+                                      }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Description de l’étape",
+                              "type": "FRAME",
+                              "layout": {
+                                "mode": "column",
+                                "gap": 10,
+                                "sizing": {
+                                  "horizontal": "FILL",
+                                  "vertical": "HUG"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "name": "Étape",
+                                  "type": "TEXT",
+                                  "characters": "Production",
+                                  "color": "#01497C",
+                                  "font": {
+                                    "family": "Geist",
+                                    "style": "SemiBold",
+                                    "size": 16
+                                  }
+                                },
+                                {
+                                  "name": "Détail",
+                                  "type": "TEXT",
+                                  "characters": "Suivi de fabrication\net déclinaisons\npour une diffusion\nmulti-supports.",
+                                  "color": "#597184",
+                                  "font": {
+                                    "family": "Geist",
+                                    "size": 14,
+                                    "lineHeight": 20
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Détails de production",
+                  "type": "FRAME",
+                  "layout": {
+                    "mode": "row",
+                    "gap": 14,
+                    "primaryAxisAlign": "CENTER",
+                    "counterAxisAlign": "CENTER",
+                    "sizing": {
+                      "horizontal": "FIXED",
+                      "vertical": "HUG"
+                    }
+                  },
+                  "children": [
+                    {
+                      "name": "Photographie du projet",
+                      "type": "FRAME",
+                      "fill": "Bleu Profond/BP 2",
+                      "cornerRadius": 13,
+                      "size": {
+                        "width": 502,
+                        "height": 264
+                      }
+                    },
+                    {
+                      "name": "Photographie du projet",
+                      "type": "FRAME",
+                      "fill": "Bleu Profond/BP 2",
+                      "cornerRadius": 13,
+                      "size": {
+                        "width": 502,
+                        "height": 264
+                      }
+                    },
+                    {
+                      "name": "Photographie du projet",
+                      "type": "FRAME",
+                      "fill": "Bleu Profond/BP 2",
+                      "cornerRadius": 13,
+                      "size": {
+                        "width": 502,
+                        "height": 264
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "colors": {
+    "Bleu Profond/Bleu profond": "#01497C",
+    "Bleu Profond/BP 2": "#3B749C",
+    "Turquoise Océanique/TO 2": "#4BA2C5",
+    "Turquoise Océanique/TO 4": "#B6DDEB",
+    "Turquoise Océanique/TO 5": "#DAEDF4",
+    "Turquoise Océanique/TO 6": "#F0F9FB"
+  },
+  "textStyles": {
+    "Title Web": {
+      "family": "Gloock",
+      "size": 80,
+      "lineHeight": 80,
+      "letterSpacing": -2
+    },
+    "Subtitle Web": {
+      "family": "Geist",
+      "style": "Bold",
+      "size": 18,
+      "letterSpacing": 3
+    }
+  },
+  "dimensions": {
+    "App Icon W+D": {
+      "iPhone": 64,
+      "iPad": 68,
+      "iPhone Duo Inner Landscape": 60,
+      "iPhone Duo Inner Portrait": 60,
+      "iPhone Duo Outer Landscape": 60,
+      "iPhone Duo Outer Portrait": 60
+    }
+  }
+}
