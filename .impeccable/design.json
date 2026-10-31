@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-31T15:37:43.096673+00:00",
+  "generatedAt": "2026-10-31T15:47:48.006333+00:00",
   "title": "Design System: Lucas Philippin",
   "extensions": {
     "colorMeta": {
@@ -273,6 +273,12 @@
       "scrollMode": "(max-width: 720px), (hover: none)",
       "selection": "One visible unfiltered card nearest screen centre; visible keyboard focus takes priority. No active card outside the gallery.",
       "handoff": "Previous overlay hides immediately; next overlay fades in."
+    },
+    "navigationFallback": {
+      "detection": "CSSViewTransitionRule unavailable",
+      "method": "Normal document navigation; temporary sessionStorage rectangle and image; incoming fixed layer animated using Web Animations for 650ms.",
+      "accessibility": "Honour reduced motion and preserve modified links.",
+      "verification": "Fallback exercised with native cross-document support disabled in the test browser; actual Firefox engine not available."
     }
   },
   "components": [
