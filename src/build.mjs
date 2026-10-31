@@ -11,7 +11,7 @@ const origin = process.env.SITE_URL?.replace(/\/$/, '');
 if (origin && !/^https:\/\/[^/]+$/.test(origin)) throw new Error('SITE_URL must be an HTTPS origin without a path.');
 await mkdir(dist, { recursive: true });
 await cp(path.join(root, 'public'), dist, { recursive: true });
-for (const file of ['styles.css', 'site.js', 'project.css']) await cp(path.join(root, 'src', file), path.join(dist, file));
+for (const file of ['styles.css', 'site.js', 'project.css', 'transitions.js']) await cp(path.join(root, 'src', file), path.join(dist, file));
 await cp(path.join(root, 'src', 'home.css'), path.join(dist, 'home.css'));
 await cp(path.join(root, 'src', 'home.js'), path.join(dist, 'home.js'));
 const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -37,13 +37,13 @@ function img(image, { sizes='100vw', eager=false, transition='' }={}) {
 }
 
 function card(p, className='', eager=false, sizes='(max-width: 720px) calc(100vw - 40px), 45vw', {type='', title=presentation[p.slug].title, heading='h2'}={}) {
-  return `<a class="project-card ${className}"${type?` data-project-type="${type}"`:""} href="${projectHref(p)}" aria-label="${esc(`${title} — ${disciplines[p.slug]}, ${p.year}`)}"><div class="art">${img({...p.cover,alt:''},{eager,sizes,transition:`project-${p.slug}`})}</div><div class="project-caption"><div><${heading}>${esc(title)}</${heading}><p class="project-discipline">${disciplines[p.slug]}</p></div><time datetime="${p.year}">${p.year}</time></div></a>`;
+  return `<a class="project-card ${className}"${type?` data-project-type="${type}"`:""} href="${projectHref(p)}" aria-label="${esc(`${title} — ${disciplines[p.slug]}, ${p.year}`)}"><div class="art">${img({...p.cover,alt:''},{eager,sizes})}</div><div class="project-caption"><div><${heading}>${esc(title)}</${heading}><p class="project-discipline">${disciplines[p.slug]}</p></div><time datetime="${p.year}">${p.year}</time></div></a>`;
 }
 
 function page({ title, description, body, route='/', kind='project', image=data.projects[0].cover.src, lightbox=false }) {
   const isHome=kind==='home';
   return `<!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#F0F9FB"><meta name="color-scheme" content="light"><title>${esc(title)} — Lucas Philippin</title><meta name="description" content="${esc(description)}"><meta property="og:title" content="${esc(title)} — Lucas Philippin"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website">${origin?`<link rel="canonical" href="${origin}${route}"><meta property="og:url" content="${origin}${route}"><meta property="og:image" content="${origin}${image}">`:''}<link rel="icon" href="/assets/Logo_C.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/Logo_Ico.png"><link rel="stylesheet" href="/fonts/fonts.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/home.css"><script src="/site.js" defer></script></head>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#F0F9FB"><meta name="color-scheme" content="light"><title>${esc(title)} — Lucas Philippin</title><meta name="description" content="${esc(description)}"><meta property="og:title" content="${esc(title)} — Lucas Philippin"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website">${origin?`<link rel="canonical" href="${origin}${route}"><meta property="og:url" content="${origin}${route}"><meta property="og:image" content="${origin}${image}">`:''}<link rel="icon" href="/assets/Logo_C.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/assets/Logo_Ico.png"><link rel="stylesheet" href="/fonts/fonts.css"><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/home.css"><script src="/transitions.js"></script><script src="/site.js" defer></script></head>
 <body class="${kind} site-shell"><a class="skip-link" href="#main">Aller au contenu</a><header class="site-header wrap"><a class="brand" href="/" aria-label="Lucas Philippin — Accueil"><img src="/assets/Logo_Full_C.svg" width="168" height="57" alt="Lucas Philippin"></a><nav aria-label="Navigation principale"><a href="/#projets"${isHome?' aria-current="page"':''}>Mes projets</a><a class="contact-link" href="/contact/"${kind==='contact'?' aria-current="page"':''}>Contact</a></nav></header>
 <main id="main" tabindex="-1">${body}</main>
 ${homeFooter}
@@ -89,7 +89,7 @@ for (const [projectIndex, p] of data.projects.entries()) {
     const portrait=m.items.every(im=>im.height>im.width);
     const result=`<div class="image-group ${m.items.length>1?'image-group-multiple':''} ${portrait?'image-group-portrait':''} ${i===openingIndex?'project-opening-gallery':''}" data-count="${m.items.length}">${m.items.map((im,j)=>{
       const hero=firstImage; firstImage=false;
-      const markup=`<a class="image-link" href="${im.src}" data-gallery="${galleryIndex++}" data-caption="${esc(im.alt)}" aria-label="Agrandir : ${esc(im.alt)}">${img(im,{sizes:m.items.length>1?'(max-width: 720px) calc(100vw - 40px), 46vw':'(max-width: 720px) calc(100vw - 40px), 90vw',eager:hero,transition:hero?`project-${p.slug}`:''})}<span class="image-zoom" aria-hidden="true">${plus}</span></a>`;
+      const markup=`<a class="image-link" href="${im.src}" data-gallery="${galleryIndex++}" data-caption="${esc(im.alt)}" aria-label="Agrandir : ${esc(im.alt)}">${img(im,{sizes:m.items.length>1?'(max-width: 720px) calc(100vw - 40px), 46vw':'(max-width: 720px) calc(100vw - 40px), 90vw',eager:hero,transition:hero?'project-cover':''})}<span class="image-zoom" aria-hidden="true">${plus}</span></a>`;
       return markup;
     }).join('')}</div>`;
     return result;

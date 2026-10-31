@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-31T15:21:59.539452+00:00",
+  "generatedAt": "2026-10-31T15:37:43.096673+00:00",
   "title": "Design System: Lucas Philippin",
   "extensions": {
     "colorMeta": {
@@ -191,6 +191,11 @@
         "name": "homepage-caption-enter",
         "value": "500ms cubic-bezier(.22,.61,.36,1) 60ms",
         "purpose": "Reveal caption with a restrained 6px rise."
+      },
+      {
+        "name": "project-cover-travel",
+        "value": "650ms cubic-bezier(.22,.61,.36,1)",
+        "purpose": "Only selected thumbnail and destination cover participate; root crossfade 150/250ms."
       }
     ],
     "breakpoints": [
@@ -240,7 +245,8 @@
         "src/build.mjs",
         "src/site.js",
         "src/render-content.mjs",
-        "charte/Brand design_variables.json"
+        "charte/Brand design_variables.json",
+        "src/transitions.js"
       ],
       "notes": [
         "Tonal ramps reuse supplied brand values; they are preview metadata, not additional interface colors.",
