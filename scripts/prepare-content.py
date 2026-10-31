@@ -104,6 +104,8 @@ for cover in listing.xpath('//a[contains(concat(" ",normalize-space(@class)," ")
             embed=page.parent/module.xpath('.//iframe')[0].get('src')
             embed_tree=parse(embed)
             video=embed.parent/embed_tree.xpath('//source[@type="video/mp4"]')[0].get('src')
+            original=embed.parent/'Séquence 01.mp4'
+            if original.exists(): video=original
             target=OUT/'termino-logic-video.mp4'
             if not target.exists(): shutil.copy2(video,target)
             project['modules'].append({'type':'video','src':'/assets/'+target.name,'title':'Termino-Logic — présentation vidéo','source':str(video.relative_to(ROOT)).replace('\\','/')})

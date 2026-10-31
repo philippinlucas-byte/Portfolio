@@ -1,5 +1,25 @@
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 
+// Fetch the Full HD clip only near its section; keep native playback controls.
+for (const video of document.querySelectorAll('[data-project-video]')) {
+  if (motion.matches) video.autoplay = false;
+  const loadVideo = () => {
+    const source = video.querySelector('source[data-src]');
+    source.src = source.dataset.src;
+    delete source.dataset.src;
+    video.load();
+    if (!motion.matches) video.play().catch(() => {});
+  };
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      loadVideo();
+      observer.disconnect();
+    }, {rootMargin: '200px'});
+    observer.observe(video);
+  } else loadVideo();
+}
+
 // Content remains visible if JS, IntersectionObserver, or motion is unavailable.
 if ('IntersectionObserver' in window && !motion.matches) {
   const observer = new IntersectionObserver(entries => {

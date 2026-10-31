@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, cp } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { renderContent } from './render-content.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dist = path.join(root, 'dist');
@@ -28,15 +29,15 @@ const disciplines = {
 };
 const social = '<a href="https://www.linkedin.com/in/lucas-philippin" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/philiperlimpinpin/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.artstation.com/lucas-philippin" target="_blank" rel="noopener noreferrer">ArtStation</a><a href="mailto:philippin.lucas@gmail.com">E-mail</a>';
 
-const homeFooter = `<footer class="site-footer home-footer wrap"><div class="home-footer-main"><a class="home-signature" href="/" aria-label="Lucas Philippin — Accueil"><img src="/assets/Logo_Background_Square.svg" alt="" width="40" height="40"><span>Lucas Philippin</span></a><a class="home-footer-contact" href="/contact/">Contact</a></div><div class="home-footer-details"><nav aria-label="Réseaux et contact">${social}</nav><a href="#main">Back to Top</a><p>© 2026 Lucas Philippin. Tous droits réservés.</p></div></footer>`;
+const homeFooter = `<footer class="site-footer home-footer wrap"><div class="home-footer-main"><a class="home-signature" href="/" aria-label="Lucas Philippin — Accueil"><img src="/assets/Logo_Background_Square.svg" alt="" width="40" height="40"><span>Lucas Philippin</span></a><a class="home-footer-contact" href="/contact/">Contact</a></div><div class="home-footer-details"><nav aria-label="Réseaux et contact">${social}</nav><a href="#main">Retour en haut</a><p>© 2026 Lucas Philippin. Tous droits réservés.</p></div></footer>`;
 
 function img(image, { sizes='100vw', eager=false, transition='' }={}) {
   const fallback = image.variants.find(v=>v.width>=1200) || image.variants.at(-1);
   return `<img src="${fallback.src}" srcset="${image.variants.map(v=>`${v.src} ${v.width}w`).join(', ')}" sizes="${sizes}" width="${image.width}" height="${image.height}" alt="${esc(image.alt)}" ${eager?'loading="eager" fetchpriority="high"':'loading="lazy"'} decoding="async"${transition?` style="view-transition-name:${transition}"`:''}>`;
 }
 
-function card(p, className='', eager=false, sizes='(max-width: 720px) calc(100vw - 40px), 45vw') {
-  return `<a class="project-card ${className}" href="${projectHref(p)}"><div class="art">${img(p.cover,{eager,sizes,transition:`project-${p.slug}`})}<span class="project-open" aria-hidden="true">Voir le projet</span></div><div class="project-caption"><div><h2>${esc(presentation[p.slug].title)}</h2><p class="project-discipline">${disciplines[p.slug]}</p></div><time datetime="${p.year}">${p.year}</time></div></a>`;
+function card(p, className='', eager=false, sizes='(max-width: 720px) calc(100vw - 40px), 45vw', {type='', title=presentation[p.slug].title, heading='h2'}={}) {
+  return `<a class="project-card ${className}"${type?` data-project-type="${type}"`:""} href="${projectHref(p)}" aria-label="${esc(`${title} — ${disciplines[p.slug]}, ${p.year}`)}"><div class="art">${img({...p.cover,alt:''},{eager,sizes,transition:`project-${p.slug}`})}</div><div class="project-caption"><div><${heading}>${esc(title)}</${heading}><p class="project-discipline">${disciplines[p.slug]}</p></div><time datetime="${p.year}">${p.year}</time></div></a>`;
 }
 
 function page({ title, description, body, route='/', kind='project', image=data.projects[0].cover.src, lightbox=false }) {
@@ -56,16 +57,16 @@ async function emit(route, content) {
   await writeFile(dest,content);
 }
 
-const homeBody=`<section class="intro wrap"><div><h1><span class="title-line"><span>Bonjour, moi c’est</span></span> <span class="title-line"><span>Lucas Philippin !</span></span></h1><p class="intro-subtitle">Design graphique &amp; édition</p></div><a class="intro-invitation" href="#projets">${esc(data.invitation)}</a></section><section class="gallery wrap" id="projets" aria-label="Mes projets"><div class="gallery-opening">${card(data.projects[0],'lead',true,'(max-width: 720px) calc(100vw - 40px), 62vw')}<div class="gallery-stack">${card(data.projects[1],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}${card(data.projects[2],'',false,'(max-width: 720px) calc(100vw - 40px), 30vw')}</div></div><div class="gallery-rest reveal-group">${data.projects.slice(3).map(p=>card(p)).join('')}</div></section><section class="contact-band"><div class="wrap"><a href="/contact/">Contact</a><p class="contact-band-subtitle">Lucas Philippin · Designer Graphique</p></div></section>`;
-const home = page({title:'Mes projets',description:'Le portfolio de Lucas Philippin, Designer Graphique. Découvrez mes projets.',body:homeBody,kind:'home'});
-const homeArtwork = `<a class="home-feature" href="${projectHref(data.projects[1])}" aria-label="${esc(data.projects[1].title)}"><img src="/assets/home-business-cards-1280.webp" srcset="/assets/home-business-cards-640.webp 640w, /assets/home-business-cards-1280.webp 1280w, /assets/home-business-cards-1920.webp 1920w" sizes="(max-width:720px) 90vw, 50vw" width="2161" height="728" alt="Cartes de visite de Lucas Philippin" fetchpriority="high"><span class="home-feature-label"><small>Identité visuelle</small><strong>Lucas Philippin</strong>${arrow}</span></a>`;
+const identityCover=data.projects[1].cover;
+const homeArtwork = `<div class="home-feature"><picture><source media="(max-width:720px)" srcset="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%2F%3E"><source srcset="${identityCover.variants.filter(v=>v.width<=1920).map(v=>`${v.src} ${v.width}w`).join(', ')}" sizes="65vw"><img src="${identityCover.variants[1].src}" width="${identityCover.width}" height="${identityCover.height}" alt="" fetchpriority="high" decoding="async"></picture><a class="home-feature-label" href="${projectHref(data.projects[1])}" aria-label="Découvrir le projet d’identité visuelle Lucas Philippin"><small>Identité visuelle</small><strong>Lucas Philippin</strong>${arrow}</a></div>`;
 const filters = `<div class="home-filters wrap" hidden><div role="group" aria-label="Filtrer les projets par type">${[['all','Tous'],['branding','Branding'],['web','Web'],['print','Print']].map(([value,label])=>`<button type="button" data-project-filter="${value}" aria-pressed="${value==='all'}">${label}</button>`).join('')}</div><p role="status" aria-live="polite" data-project-count>5 projets</p></div>`;
 
-let pilotHome=home.replace('<body class="home site-shell">','<body class="home home-pilot site-shell">').replace('</head>','<script src="/home.js" defer></script></head>').replace('</section><section class="gallery wrap"',`${homeArtwork}</section>${filters}<section class="gallery wrap"`).replace(/<section class="contact-band">[\s\S]*?<\/section>/,'').replace(/<footer class="site-footer wrap">[\s\S]*?<\/footer>/,homeFooter);
 const projectTypes=['print','branding','print','web','branding'];
 const homeProjectTitles=['Termino-Logic — Croix-Rouge Compétence','Lucas Philippin','5 modèles de CV','Raise','Résiop'];
-
-data.projects.forEach((p,i)=>{pilotHome=pilotHome.replace(`class="project-card ${i===0?'lead':''}" href="${projectHref(p)}"`,`class="project-card ${i===0?'lead':''}" data-project-type="${projectTypes[i]}" href="${projectHref(p)}"`).replace(`<h2>${esc(presentation[p.slug].title)}</h2>`,`<h2>${esc(homeProjectTitles[i])}</h2>`);});
+const homeGallery=data.projects.map((p,i)=>card(p,i===0?'lead':'',i===0,i===0?'(max-width: 720px) calc(100vw - 40px), 62vw':'(max-width: 720px) calc(100vw - 40px), 30vw',{type:projectTypes[i],title:homeProjectTitles[i]})).join('');
+const homeBody=`<section class="intro wrap"><div><h1><span class="title-line"><span>Bonjour, moi c’est</span></span> <span class="title-line"><span>Lucas Philippin !</span></span></h1><p class="intro-subtitle">Design graphique &amp; édition</p></div><a class="intro-invitation" href="#projets">Découvrir mes projets</a>${homeArtwork}</section>${filters}<section class="gallery wrap" id="projets" aria-label="Mes projets">${homeGallery}</section>`;
+const home=page({title:'Mes projets',description:'Le portfolio de Lucas Philippin, Designer Graphique. Découvrez mes projets.',body:homeBody,kind:'home'});
+const pilotHome=home.replace('<body class="home site-shell">','<body class="home home-pilot site-shell">').replace('</head>','<script src="/home.js" defer></script></head>');
 await emit('',pilotHome);
 await emit('projets',pilotHome);
 
@@ -83,8 +84,8 @@ for (const [projectIndex, p] of data.projects.entries()) {
   const openingIndex=p.modules.findIndex(m=>m.type==='images');
   const modules=p.modules.map((m,i)=>{
     const narrativeTitle=i===2&&p.slug==='identite-graphique-lucas-philippin'?'Une identité cohérente':i===2&&p.slug==='logo-and-business-card-resiop'?'Professionnalisme et dynamisme':info.relocateIntro&&i===0&&!m.html?.includes('<h2>')?'Le projet':'';
-    if (m.type==='text') return `<section class="project-text${m.html?.includes('Autres supports')||narrativeTitle==='Le projet'?' project-major-text':''}${m.html?.includes('<a ')?' project-resource':''}${i===0?' project-introduction':''} reveal">${narrativeTitle?`<h2 class="narrative-label">${narrativeTitle}</h2>`:''}${m.html.replace(/<h3>\s*<h3>/g,'<h3>').replace(/<\/h3>\s*<\/h3>/g,'</h3>')}</section>`;
-    if (m.type==='video') return `<figure class="project-video reveal"><video controls playsinline preload="none" aria-label="${esc(m.title)}"><source src="${m.src}" type="video/mp4"><a href="${m.src}">Voir la vidéo</a></video></figure>`;
+    if (m.type==='text') return `<section class="project-text${m.html?.includes('Autres supports')||narrativeTitle==='Le projet'?' project-major-text':''}${m.html?.includes('<a ')?' project-resource':''}${i===0?' project-introduction':''} reveal">${narrativeTitle?`<h2 class="narrative-label">${narrativeTitle}</h2>`:''}${renderContent(m.html)}</section>`;
+    if (m.type==='video') return `<figure class="project-video reveal"><video controls autoplay muted playsinline preload="none" width="1920" height="1080" poster="/assets/termino-logic-video-poster.webp" data-project-video aria-label="${esc(m.title)}"><source data-src="${m.src}" type="video/mp4"><a href="${m.src}">Voir la vidéo</a></video><noscript><p><a href="${m.src}">Lire la présentation vidéo</a></p></noscript></figure>`;
     const portrait=m.items.every(im=>im.height>im.width);
     const result=`<div class="image-group ${m.items.length>1?'image-group-multiple':''} ${portrait?'image-group-portrait':''} ${i===openingIndex?'project-opening-gallery':''}" data-count="${m.items.length}">${m.items.map((im,j)=>{
       const hero=firstImage; firstImage=false;
@@ -94,9 +95,16 @@ for (const [projectIndex, p] of data.projects.entries()) {
     return result;
   });
   const others=data.projects.filter(other=>other.slug!==p.slug);
+  const plantCount=Math.min(8,Math.max(4,Math.ceil(p.modules.length/2)));
+  const plants=`<div class="project-botanicals" aria-hidden="true">${Array.from({length:plantCount},(_,i)=>{
+    const position=(i/(plantCount-1))*100;
+    const plant=[1,3,5][(i+projectIndex)%3];
+    return `<span style="--plant-image:url('/assets/plant-${plant}.svg');--plant-position:calc(${position.toFixed(3)}% - ${(position*3.4).toFixed(2)}px)"></span>`;
+  }).join('')}</div>`;
+
   // Only the initial, contiguous content enters the hero. Never pull later
   // artwork across narrative text (notably the CV introduction after its image).
-  const body=`<article class="project-page wrap" data-project="${projectIndex}"><div class="project-hero"><div class="project-summary"><header class="project-heading"><a href="/#projets" class="back-link">${chevron} Mes projets</a><h1>${esc(info.title)}</h1><div class="project-meta"><p class="project-discipline">${esc(info.subtitle)}</p></div><ul class="project-keywords" aria-label="Domaines du projet">${info.keywords.map(word=>`<li>${esc(word)}</li>`).join('')}</ul></header>${info.summary?`<p class="project-abstract">${esc(info.summary)}</p>`:modules.slice(0,openingIndex).join('\n')}${factList}${projectNavigation}</div>${modules[openingIndex]}</div><div class="project-modules">${info.relocateIntro?modules.slice(0,openingIndex).join('\n'):''}${modules.slice(openingIndex+1).join('\n')}</div><section class="related wrap"><h2>Vous pourriez aimer aussi :</h2><div class="related-grid reveal-group">${others.map(other=>card(other,'','',( '(max-width: 720px) calc(100vw - 40px), 44vw'))).join('')}</div></section></article>`;
+  const body=`<article class="project-page wrap" data-project="${projectIndex}">${plants}<div class="project-hero"><div class="project-summary"><header class="project-heading"><a href="/#projets" class="back-link">${chevron} Mes projets</a><h1>${esc(info.title)}</h1><div class="project-meta"><p class="project-discipline">${esc(info.subtitle)}</p></div><ul class="project-keywords" aria-label="Domaines du projet">${info.keywords.map(word=>`<li>${esc(word)}</li>`).join('')}</ul></header>${info.summary?`<p class="project-abstract">${esc(info.summary)}</p>`:modules.slice(0,openingIndex).join('\n')}${factList}${projectNavigation}</div>${modules[openingIndex]}</div><div class="project-modules">${info.relocateIntro?modules.slice(0,openingIndex).join('\n'):''}${modules.slice(openingIndex+1).join('\n')}</div><section class="related wrap"><h2>À découvrir aussi</h2><div class="related-grid reveal-group">${others.map(other=>card(other,'',false,'(max-width: 720px) calc(100vw - 40px), 44vw',{heading:'h3'})).join('')}</div></section></article>`;
   const description=p.modules.find(m=>m.type==='text')?.text.slice(0,220)||p.title;
   await emit(p.slug,page({title:p.title,description,body,route:projectHref(p),image:p.cover.src,lightbox:true}).replace('</head>','<link rel="stylesheet" href="/project.css"></head>'));
 }

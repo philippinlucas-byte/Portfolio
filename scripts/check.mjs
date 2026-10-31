@@ -1,3 +1,4 @@
+import {renderContent} from '../src/render-content.mjs';
 import {readFile,stat,readdir} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -36,14 +37,14 @@ for(const p of data.projects) {
   for(const adjacent of [(index+data.projects.length-1)%data.projects.length,(index+1)%data.projects.length]) assert(pagination.includes(`href="/${data.projects[adjacent].slug}/"`),`${p.slug}: missing adjacent-project navigation`);
   assert(source.includes('class="project-facts"')&&source.includes('class="project-keywords"'),`${p.slug}: incomplete hero`);
   assert.equal((source.match(/data-gallery=/g)||[]).length,expected.length,`${p.slug}: project images lost`);
-  for(const m of p.modules.filter(m=>m.type==='text')) assert(source.includes(m.html.replace(/<h3>\s*<h3>/g,'<h3>').replace(/<\/h3>\s*<\/h3>/g,'</h3>')),`${p.slug}: source text changed`);
+  for(const m of p.modules.filter(m=>m.type==='text')) assert(source.includes(renderContent(m.html)),`${p.slug}: source text changed`);
   // Text and media must stay interleaved in the source order, including across
   // the hero/story boundary. Image counts alone do not protect that contract.
   let contentCursor=0;
   const presentation=JSON.parse(await readFile(path.join(root,'src/data/project-presentation.json'),'utf8'))[p.slug];
   const ordered=presentation.relocateIntro?[p.modules[1],p.modules[0],...p.modules.slice(2)]:p.modules;
   for(const module of ordered) {
-    const tokens=module.type==='text'?[module.html.replace(/<h3>\s*<h3>/g,'<h3>').replace(/<\/h3>\s*<\/h3>/g,'</h3>')]:module.type==='video'?[`<source src="${module.src}"`]:module.items.map(image=>`href="${image.src}" data-gallery=`);
+    const tokens=module.type==='text'?[renderContent(module.html)]:module.type==='video'?[`<source data-src="${module.src}"`]:module.items.map(image=>`href="${image.src}" data-gallery=`);
     for(const token of tokens) {
       const position=source.indexOf(token,contentCursor);
       assert(position>=contentCursor,`${p.slug}: content missing or reordered`);
@@ -60,6 +61,6 @@ for(const filename of await readdir(path.join(dist,'assets'))) assert((await sta
 const css=await readFile(path.join(dist,'styles.css'),'utf8');
 assert(css.includes('prefers-reduced-motion: reduce'),'Reduced-motion style missing');
 const fonts=await readFile(path.join(dist,'fonts/fonts.css'),'utf8');
-assert(fonts.includes('font-weight: 700'),'Real bold font required');
+assert(/font-weight: (?:700|400 700)/.test(fonts),'Real bold font required');
 assert(!fonts.includes('https:'),'Fonts must be self-hosted');
 console.log(`PASS: ${pages.length} pages, ${references} local references, all project modules and WebP provenance; font and motion fallbacks checked.`);

@@ -14,7 +14,7 @@
       "Mission": "Identité visuelle, structuration du contenu, mise en page",
       "Outils": "InDesign, Excel"
     },
-    "summary": "Un jeu de société de 778 cartes pour apprendre la terminologie médicale. Identité visuelle, organisation du contenu et livret de règles ont été conçus avec l’équipe pédagogique de la Croix-Rouge Compétence.",
+    "summary": "Un jeu de 778 cartes pour apprendre la terminologie médicale, conçu avec l’équipe pédagogique : identité visuelle, contenu et livret de règles.",
     "relocateIntro": true
   },
   "identite-graphique-lucas-philippin": {
@@ -63,6 +63,8 @@
     "relocateIntro": true
   },
   "logo-and-business-card-resiop": {
+    "summary": "Une identité visuelle et une carte de visite pour un consultant industriel. Des formes affirmées et une palette vive traduisent son expertise et sa personnalité accessible.",
+    "relocateIntro": true,
     "title": "Résiop",
     "subtitle": "Identité · Logo et carte de visite",
     "keywords": [
