@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T14:06:50.046009+00:00",
+  "title": "Design System: Lucas Philippin",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Bleu Profond",
+        "tonalRamp": [
+          "#012c50",
+          "#01497c",
+          "#3b749c",
+          "#78a1be",
+          "#b2ccde",
+          "#eef8ff"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Écriture",
+        "tonalRamp": [
+          "#012c50",
+          "#01497c",
+          "#3b749c",
+          "#78a1be",
+          "#b2ccde",
+          "#eef8ff"
+        ]
+      },
+      "turquoise-ocean": {
+        "role": "secondary",
+        "displayName": "Turquoise Océanique",
+        "tonalRamp": [
+          "#2c7da0",
+          "#4ba2c5",
+          "#84c4dc",
+          "#b6ddeb",
+          "#daedf4",
+          "#f0f9fb"
+        ]
+      },
+      "turquoise": {
+        "role": "secondary",
+        "displayName": "turquoise",
+        "tonalRamp": [
+          "#2c7da0",
+          "#4ba2c5",
+          "#84c4dc",
+          "#b6ddeb",
+          "#daedf4",
+          "#f0f9fb"
+        ]
+      },
+      "home-outline": {
+        "role": "secondary",
+        "displayName": "home-outline",
+        "tonalRamp": [
+          "#2c7da0",
+          "#4ba2c5",
+          "#84c4dc",
+          "#b6ddeb",
+          "#daedf4",
+          "#f0f9fb"
+        ]
+      },
+      "pale": {
+        "role": "secondary",
+        "displayName": "pale",
+        "tonalRamp": [
+          "#2c7da0",
+          "#4ba2c5",
+          "#84c4dc",
+          "#b6ddeb",
+          "#daedf4",
+          "#f0f9fb"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "paper",
+        "tonalRamp": [
+          "#2c7da0",
+          "#4ba2c5",
+          "#84c4dc",
+          "#b6ddeb",
+          "#daedf4",
+          "#f0f9fb"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "surface",
+        "tonalRamp": [
+          "#cccccc",
+          "#efefef",
+          "#fbfbfb",
+          "#ffffff"
+        ]
+      },
+      "rule": {
+        "role": "primary",
+        "displayName": "rule",
+        "tonalRamp": [
+          "#012c50",
+          "#01497c",
+          "#3b749c",
+          "#78a1be",
+          "#b2ccde",
+          "#eef8ff"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "display",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "headline": {
+        "displayName": "headline",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "card-title": {
+        "displayName": "card-title",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "body": {
+        "displayName": "body",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "abstract": {
+        "displayName": "abstract",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "narrative": {
+        "displayName": "narrative",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "label": {
+        "displayName": "label",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "meta": {
+        "displayName": "meta",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      },
+      "control": {
+        "displayName": "control",
+        "purpose": "Observed role; see DESIGN.md Typography."
+      }
+    },
+    "shadows": [
+      {
+        "name": "suggestion-caption",
+        "value": "0 1px 3px rgba(1,44,80,.7)",
+        "purpose": "Existing project suggestions only."
+      },
+      {
+        "name": "homepage-caption",
+        "value": "0 5px 14px rgba(1,44,80,.35)",
+        "purpose": "Diffuse offset shadow for homepage captions; no tight outline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared easing."
+      },
+      {
+        "name": "caption",
+        "value": "250ms",
+        "purpose": "Hover and focus caption reveal."
+      },
+      {
+        "name": "reveal-text",
+        "value": "800ms",
+        "purpose": "Narrative section entrance."
+      },
+      {
+        "name": "lightbox-change",
+        "value": "320ms",
+        "purpose": "Previous/next image feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-header",
+        "value": "380px"
+      },
+      {
+        "name": "home-mobile",
+        "value": "720px"
+      },
+      {
+        "name": "project-mobile",
+        "value": "760px"
+      },
+      {
+        "name": "project-tablet",
+        "value": "1000px"
+      },
+      {
+        "name": "home-two-columns",
+        "value": "1100px"
+      },
+      {
+        "name": "short-screen",
+        "value": "740px",
+        "axis": "height"
+      }
+    ],
+    "fluidSpacing": {
+      "section": "clamp(48px, 6vw, 96px)",
+      "chapter": "clamp(96px, 10vw, 160px)",
+      "footer": "clamp(64px, 7vw, 112px)"
+    },
+    "fluidTypography": {
+      "project-title": "clamp(2.3rem, 3.55vw, 4.4rem)",
+      "story-title": "clamp(2rem, 3.2vw, 3.5rem)",
+      "home-title": "clamp(2.6rem, 3.75vw, 4.5rem)",
+      "home-tablet-title": "clamp(2.25rem, 4.4vw, 3rem)"
+    },
+    "provenance": {
+      "mode": "scan",
+      "sourceFiles": [
+        "src/styles.css",
+        "src/home.css",
+        "src/project.css",
+        "src/build.mjs",
+        "src/site.js",
+        "src/render-content.mjs",
+        "charte/Brand design_variables.json"
+      ],
+      "notes": [
+        "Tonal ramps reuse supplied brand values; they are preview metadata, not additional interface colors.",
+        "Tally field is an observed external preview. Focus treatment in this isolated preview is illustrative; the live service owns its state styling.",
+        "The name Portfolio botanique editorial describes the observed system; it is not a new brand name."
+      ]
+    },
+    "intentionalExceptions": [
+      {
+        "name": "small-turquoise-contrast",
+        "contrast": 4.32,
+        "status": "Preserved after explicit user request; semibold does not change the contrast ratio."
+      },
+      {
+        "name": "tally-placeholder",
+        "contrast": 1.86,
+        "status": "Preserved after explicit user request; external form."
+      }
+    ],
+    "homepageOverlay": {
+      "blur": "8px",
+      "mask": "linear-gradient(to bottom, transparent 12%, rgba(0,0,0,.08) 32%, rgba(0,0,0,.4) 58%, black 100%)",
+      "darkestOpacity": 0.72,
+      "scrollMode": "(max-width: 720px), (hover: none)",
+      "selection": "One visible unfiltered card nearest screen centre; visible keyboard focus takes priority. No active card outside the gallery.",
+      "handoff": "Previous overlay hides immediately; next overlay fades in."
+    }
+  },
+  "components": [
+    {
+      "name": "Contact",
+      "kind": "button",
+      "description": "Slim contact pill; the transparent hit area extends beyond its visible shape.",
+      "html": "<a class=\"ds-contact\" href=\"/contact/\">Contact</a>",
+      "css": ".ds-contact{font-family:var(--text,Geist,system-ui,sans-serif);position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:148px;padding:7px 24px;font-size:14px;font-weight:500;line-height:22px;border-radius:999px;background:var(--turquoise-ocean,#2c7da0);color:white;text-decoration:none;transition:background .3s}.ds-contact:before{content:\"\";position:absolute;inset:-4px 0;border-radius:inherit}.ds-contact:hover{background:var(--blue,#01497c)}.ds-contact:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}",
+      "refersTo": "button-contact"
+    },
+    {
+      "name": "Discover projects",
+      "kind": "button",
+      "description": "The blue homepage action, leading directly to the gallery.",
+      "html": "<a class=\"ds-discover\" href=\"/#projets\">Découvrir mes projets</a>",
+      "css": ".ds-discover{font-family:var(--text,Geist,system-ui,sans-serif);display:inline-flex;padding:12px 28px;border-radius:27px;background:var(--blue,#01497c);color:white;font-size:16px;line-height:20px;text-decoration:none}.ds-discover:hover{background:var(--ink,#012c50)}.ds-discover:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}",
+      "refersTo": "button-discover"
+    },
+    {
+      "name": "Project keyword",
+      "kind": "chip",
+      "description": "Non-interactive project discipline tag.",
+      "html": "<span class=\"ds-keyword\">Illustration</span>",
+      "css": ".ds-keyword{font-family:var(--text,Geist,system-ui,sans-serif);display:inline-block;padding:4px 12px;border-radius:999px;background:var(--pale,#daedf4);color:var(--blue,#01497c);font-size:12px;line-height:1.5}",
+      "refersTo": "keyword"
+    },
+    {
+      "name": "Project filters",
+      "kind": "chip",
+      "description": "Unselected and selected states; actual filtering is supplied by home.js.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Project filter states\"><button type=\"button\" aria-pressed=\"true\">Tous</button><button type=\"button\" aria-pressed=\"false\">Web</button></div>",
+      "css": ".ds-filters{display:flex;gap:12px}.ds-filters button{font-family:var(--text,Geist,system-ui,sans-serif);min-width:96px;min-height:36px;padding:8px 16px;border:1px solid var(--home-outline,#b6ddeb);border-radius:18px;background:var(--paper,#f0f9fb);color:var(--ink,#012c50);font-size:14px;line-height:18px;cursor:pointer}.ds-filters button[aria-pressed=true]{background:var(--turquoise-ocean,#2c7da0);border-color:var(--turquoise-ocean,#2c7da0);color:white}.ds-filters button:hover{border-color:var(--blue,#01497c)}.ds-filters button:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(max-width:720px){.ds-filters button{min-width:70px;min-height:44px}}",
+      "refersTo": "filter"
+    },
+    {
+      "name": "Project pagination",
+      "kind": "nav",
+      "description": "Curved previous/next arrows and tabular counter.",
+      "html": "<nav class=\"ds-pagination\" aria-label=\"Changer de projet\"><a href=\"/5-modular-resume-templates/\" aria-label=\"Projet précédent\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M15 6c-2 3-4 5-7 6 3 1 5 3 7 6\"/></svg></a><span>04 / 05</span><a class=\"ds-next\" href=\"/logo-and-business-card-resiop/\" aria-label=\"Projet suivant\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M15 6c-2 3-4 5-7 6 3 1 5 3 7 6\"/></svg></a></nav>",
+      "css": ".ds-pagination{font-family:var(--text,Geist,system-ui,sans-serif);display:flex;align-items:center;gap:20px;color:var(--blue,#01497c)}.ds-pagination a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--rule,#b2ccde);border-radius:50%}.ds-pagination svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.ds-pagination .ds-next svg{transform:rotate(180deg)}.ds-pagination span{font-size:12px;font-variant-numeric:tabular-nums}.ds-pagination a:hover{background:var(--pale,#daedf4);border-color:var(--turquoise-ocean,#2c7da0)}.ds-pagination a:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}",
+      "refersTo": "pagination"
+    },
+    {
+      "name": "Project card",
+      "kind": "card",
+      "description": "Shared project-suggestion card. Homepage uses the progressive-blur variant below.",
+      "html": "<a class=\"ds-card\" href=\"/webdesign-raise/\" aria-label=\"Raise — Webdesign, 2025\"><img src=\"/assets/webdesign-raise-cover-640.webp\" width=\"640\" height=\"360\" alt=\"\"><div class=\"ds-caption\"><div><p>WEBDESIGN</p><h3>Raise</h3></div><time datetime=\"2025\">2025</time></div></a>",
+      "css": ".ds-card{position:relative;display:block;max-width:422px;overflow:hidden;border-radius:20px;color:white;text-decoration:none;isolation:isolate}.ds-card img{display:block;width:100%;height:auto;aspect-ratio:422/236;object-fit:cover}.ds-card:after{content:\"\";position:absolute;inset:25% 0 0;background:linear-gradient(transparent 15%,rgba(1,44,80,.58));mask-image:linear-gradient(transparent,black 85%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption{font-family:var(--text,Geist,system-ui,sans-serif);position:absolute;z-index:1;inset:auto 14px 14px 20px;display:flex;align-items:end;justify-content:space-between;gap:12px;text-shadow:0 1px 3px rgba(1,44,80,.7);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption h3{margin:0;font:400 20px/1.2 var(--display,Gloock,Georgia,serif);letter-spacing:-.02em}.ds-caption p{margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.095em;line-height:1.5}.ds-caption time{font-size:12px}.ds-card:is(:hover,:focus-visible):after,.ds-card:is(:hover,:focus-visible) .ds-caption{opacity:1}.ds-card:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(hover:none){.ds-card:after,.ds-card .ds-caption{opacity:1}}@media(prefers-reduced-motion:reduce){.ds-card:after,.ds-caption{transition:none}}",
+      "refersTo": "project-card"
+    },
+    {
+      "name": "Header navigation",
+      "kind": "nav",
+      "description": "Shared compact navigation, with the slim contact action.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navigation principale\"><a href=\"/#projets\">Mes projets</a><a class=\"ds-nav-contact\" href=\"/contact/\">Contact</a></nav>",
+      "css": ".ds-nav{font-family:var(--text,Geist,system-ui,sans-serif);display:flex;align-items:center;gap:32px}.ds-nav a{padding:12px 0;color:var(--ink,#012c50);font-size:14px;font-weight:500;line-height:1.6;text-decoration:none}.ds-nav a:hover{text-decoration:underline;text-underline-offset:6px}.ds-nav .ds-nav-contact{padding:7px 24px;border-radius:999px;background:var(--turquoise-ocean,#2c7da0);color:white;line-height:22px}.ds-nav .ds-nav-contact:hover{background:var(--blue,#01497c);text-decoration:none}.ds-nav a:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(max-width:720px){.ds-nav{gap:16px}}"
+    },
+    {
+      "name": "Tally text field",
+      "kind": "input",
+      "description": "Observed external field style; preview only, not a replacement for the live Tally form.",
+      "html": "<label class=\"ds-field\">Nom <span aria-hidden=\"true\">*</span><input type=\"text\" placeholder=\"Votre nom complet\" autocomplete=\"name\" required></label>",
+      "css": ".ds-field{font-family:var(--text,Geist,system-ui,sans-serif);display:grid;gap:12px;max-width:360px;font-weight:700;color:var(--blue,#01497c)}.ds-field input{font-family:var(--text,Geist,system-ui,sans-serif);min-height:36px;padding:0 10px;border:0;border-radius:8px;color:var(--blue,#01497c);background:rgba(255,255,255,.5);font-size:16px;line-height:1.15;box-shadow:0 1px 1px rgba(0,0,0,.12),0 0 0 1px rgba(9,78,128,.16),0 2px 5px rgba(9,78,128,.08)}.ds-field input::placeholder{color:rgb(166,190,208);opacity:1}.ds-field input:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:2px}"
+    },
+    {
+      "name": "Homepage project overlay",
+      "kind": "card",
+      "description": "Progressive blur and darkening, diffuse text shadow. On narrow or touch layouts home.js selects one visible card nearest screen centre; this preview demonstrates the active appearance.",
+      "html": "<a class=\"ds-card is-scroll-active\" href=\"/webdesign-raise/\" aria-label=\"Raise — Webdesign, 2025\"><img src=\"/assets/webdesign-raise-cover-640.webp\" width=\"640\" height=\"360\" alt=\"\"><div class=\"ds-caption\"><div><p>WEBDESIGN</p><h3>Raise</h3></div><time datetime=\"2025\">2025</time></div></a>",
+      "css": ".ds-card{position:relative;display:block;max-width:422px;overflow:hidden;border-radius:20px;color:white;text-decoration:none;isolation:isolate}.ds-card img{display:block;width:100%;height:auto;aspect-ratio:422/236;object-fit:cover}.ds-card:after{content:\"\";position:absolute;inset:25% 0 0;background:linear-gradient(transparent 15%,rgba(1,44,80,.58));mask-image:linear-gradient(transparent,black 85%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption{font-family:var(--text,Geist,system-ui,sans-serif);position:absolute;z-index:1;inset:auto 14px 14px 20px;display:flex;align-items:end;justify-content:space-between;gap:12px;text-shadow:0 1px 3px rgba(1,44,80,.7);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-caption h3{margin:0;font:400 20px/1.2 var(--display,Gloock,Georgia,serif);letter-spacing:-.02em}.ds-caption p{margin:0 0 2px;font-size:12px;font-weight:700;letter-spacing:.095em;line-height:1.5}.ds-caption time{font-size:12px}.ds-card:is(:hover,:focus-visible):after,.ds-card:is(:hover,:focus-visible) .ds-caption{opacity:1}.ds-card:focus-visible{outline:2px solid var(--blue,#01497c);outline-offset:6px;}@media(hover:none){.ds-card:after,.ds-card .ds-caption{opacity:1}}@media(prefers-reduced-motion:reduce){.ds-card:after,.ds-caption{transition:none}}.ds-card:before{content:\"\";position:absolute;z-index:1;inset:0;pointer-events:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 12%,rgba(0,0,0,.08) 32%,rgba(0,0,0,.4) 58%,black 100%);opacity:0;transition:opacity .25s cubic-bezier(.16,1,.3,1)}.ds-card:after{z-index:2;inset:0;mask-image:none;background:linear-gradient(to bottom,transparent 12%,rgba(1,44,80,.06) 35%,rgba(1,44,80,.26) 65%,rgba(1,44,80,.72) 100%)}.ds-caption{z-index:3;text-shadow:0 5px 14px rgba(1,44,80,.35)}.ds-card:is(:hover,:focus-visible,.is-scroll-active):before,.ds-card.is-scroll-active:after,.ds-card.is-scroll-active .ds-caption{opacity:1}@media(prefers-reduced-motion:reduce){.ds-card:before{transition:none}}",
+      "refersTo": "project-card"
+    }
+  ],
+  "narrative": {
+    "northStar": "Portfolio botanique éditorial",
+    "overview": "Cette formule descriptive synthétise les choix du site ; elle n’est pas un nouveau nom de marque. L’identité associe une composition éditoriale précise, une typographie de titre expressive et des aquarelles végétales légères. Le rendu doit rester moderne, propre, soigné et épuré. Les réalisations portent l’attention ; l’interface organise leur lecture et facilite le contact.\n\nDocument extrait de l’implémentation et des décisions validées au 31 octobre 2026. Les valeurs du frontmatter décrivent les primitives réutilisées ; les expressions fluides, états et cas particuliers sont consignés ci-dessous et dans `.impeccable/design.json`. Les sources effectives restent les styles et composants de `src`, les polices de `public/fonts` et la charte fournie. Lors d’une évolution volontaire, actualiser ces deux documents ensemble.",
+    "keyCharacteristics": [
+      "Titres Gloock et lecture en Geist.",
+      "Bleu profond, turquoise océanique et papier bleuté.",
+      "Grandes réalisations, fonds calmes et motifs végétaux périphériques.",
+      "Espacements hiérarchisés et boutons fins.",
+      "Mêmes composants de navigation et de suggestion sur tout le site."
+    ],
+    "rules": [
+      {
+        "name": "The Palette Rule",
+        "body": "Reprendre les valeurs officielles ; ne pas inventer un turquoise « corrigé » ou remplacer le turquoise par une nuance voisine sans décision explicite.",
+        "section": "colors"
+      },
+      {
+        "name": "The Type Role Rule",
+        "body": "Distinguer le niveau visuel du niveau sémantique : un seul titre principal par page, sections en h2, sous-sections et projets suggérés en h3. Un lien de ressource est un paragraphe, pas un titre.",
+        "section": "typography"
+      },
+      {
+        "name": "The Proximity Rule",
+        "body": "Lier les éléments par leur proximité : titre, discipline et mots-clés forment un groupe ; le résumé, les spécificités et la navigation reçoivent chacun leur pause. Ne pas appliquer le même espacement à toutes ces relations.",
+        "section": "layout"
+      },
+      {
+        "name": "The Quiet Depth Rule",
+        "body": "Employer une ombre pour la lisibilité ou l’état d’un composant, jamais pour donner artificiellement du volume à chaque bloc.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Botanical Rule",
+        "body": "Utiliser seulement les plantes 1, 3 et 5 fournies dans la charte pour les fonds du site. Les disposer sur les côtés, à une taille discrète et relativement constante, sans chevauchement et avec une opacité maximale de 10 %. Les pages projet alternent les motifs, côtés et orientations ; le nombre de motifs suit la longueur de la page. Repères actuels : 280 × 340 px sur ordinateur, 180 × 260 px pour les projets sur mobile. Ne pas retirer les textures végétales au nom de la simplification. Les plantes contenues dans une image de projet restent une partie de cette œuvre et ne suivent pas les règles de la texture de fond.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** reprendre les couleurs officielles et les deux polices locales.",
+      "**Do** laisser les réalisations porter la couleur et la présence visuelle.",
+      "**Do** conserver les plantes périphériques, légères et sans chevauchement.",
+      "**Do** regrouper les contenus proches et séparer les sections par les rôles d’espacement existants.",
+      "**Do** garder la même navigation, les mêmes suggestions et le même footer sur les pages.",
+      "**Do** préserver les textes et œuvres d’origine, en distinguant leurs résumés de présentation.",
+      "**Do** vérifier les longs contenus, le clavier, les filtres, la vidéo et les petits écrans après modification."
+    ],
+    "donts": [
+      "**Don't** inventer de nuance turquoise ou déclarer conformes les contrastes conservés par choix.",
+      "**Don't** remplacer Gloock par une police système ou lui appliquer une fausse graisse bold.",
+      "**Don't** employer les plantes orange comme textures du fond, ni agrandir les motifs jusqu’à dominer la page.",
+      "**Don't** réintroduire l’ancien accueil, l’ancien header/footer ou le visuel des cartes de visite dans le hero.",
+      "**Don't** ajouter des panneaux blancs, des cadres à deux coins arrondis, des vagues ou des effets de verre décoratifs.",
+      "**Don't** comprimer les images dans des cadres qui créent des zones vides ou tronquent une œuvre informative.",
+      "**Don't** modifier le style des placeholders Tally sans nouvelle demande.",
+      "**Don't** ajouter de promesse commerciale ou de résultat non fourni par l’utilisateur."
+    ]
+  }
+}

@@ -74,7 +74,7 @@
 @media (max-width: 1100px) {
   .home-pilot { background-size: 150% auto; background-position: center 200px; }
   .home-pilot .intro { padding-inline: 0; }
-  .home-pilot .intro h1 { font-size: 3.2rem; }
+  .home-pilot .intro h1 { font-size: clamp(2.25rem, 4.4vw, 3rem); }
   .home-pilot .gallery { grid-template-columns: 1fr 1fr; }
   .home-pilot .gallery .lead { grid-row: auto; grid-column: 1 / -1; }
   .home-pilot .lead .art { aspect-ratio: 867 / 489; }
@@ -156,3 +156,36 @@
 .home-footer-contact::before { content: ''; position: absolute; inset: -4px 0; border-radius: inherit; }
 .home-footer-details nav a, .home-footer-details > a { display: inline-flex; align-items: center; min-height: 44px; }
 .contact-heading nav a { display: inline-flex; align-items: center; min-height: 44px; }
+/* Blend the blur across the whole layer, never against a hard horizontal edge. */
+.home-pilot .gallery .art::before {
+ content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none;
+ backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+ mask-image: linear-gradient(to bottom, transparent 12%, rgba(0,0,0,.08) 32%, rgba(0,0,0,.4) 58%, black 100%);
+ -webkit-mask-image: linear-gradient(to bottom, transparent 12%, rgba(0,0,0,.08) 32%, rgba(0,0,0,.4) 58%, black 100%);
+ opacity: 0; transition: opacity .25s var(--ease);
+}
+.home-pilot .gallery .art::after {
+ z-index: 2; inset: 0; mask-image: none;
+ background: linear-gradient(to bottom, transparent 12%, rgba(1,44,80,.06) 35%, rgba(1,44,80,.26) 65%, rgba(1,44,80,.72) 100%);
+}
+.home-pilot .gallery .project-caption { z-index: 3; text-shadow: 0 5px 14px rgba(1,44,80,.35); }
+.home-pilot .gallery .project-card:is(:hover,:focus-visible) .art::before { opacity: 1; }
+.home-pilot .gallery.scroll-overlays .project-card .art::before,
+.home-pilot .gallery.scroll-overlays .project-card .art::after,
+.home-pilot .gallery.scroll-overlays .project-card .project-caption { opacity: 0; }
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .art::before,
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .art::after,
+.home-pilot .gallery.scroll-overlays .project-card.is-scroll-active .project-caption { opacity: 1; }
+.home-pilot .gallery.scroll-overlays .project-card:not(.is-scroll-active) .art::before,
+.home-pilot .gallery.scroll-overlays .project-card:not(.is-scroll-active) .art::after,
+.home-pilot .gallery.scroll-overlays .project-card:not(.is-scroll-active) .project-caption { transition: none; }
+.home-pilot .gallery.scroll-overlays .project-card:hover .art img { transform: none; filter: none; }
+@media (prefers-reduced-motion: reduce) {
+ .home-pilot .gallery .art::before { transition: none; }
+}
+@media (max-width: 380px) {
+ .site-shell .brand img { width: 90px; }
+ .site-shell .site-header nav { gap: 12px; }
+ .site-shell .site-header nav a { font-size: .8125rem; white-space: nowrap; }
+ .site-shell .site-header nav .contact-link { padding-inline: 12px; }
+}

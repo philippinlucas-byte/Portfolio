@@ -184,3 +184,8 @@
 @media (min-width: 761px) and (max-width: 1000px) and (max-height: 740px) {
  .project-hero { padding-bottom: var(--space-item); }
 }
+/* Display headings use Gloock's real regular weight, independent of labels. */
+.project-modules .project-major-text > .narrative-label { font-weight: 400; }
+.project-modules .project-text > div > :is(h2,h3):first-child { align-self: start; }
+.project-resource-copy a { text-decoration-color: var(--turquoise-ocean); text-decoration-thickness: 1px; }
+.project-resource-copy a:hover { text-decoration-thickness: 2px; }
